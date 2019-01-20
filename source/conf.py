@@ -84,7 +84,7 @@ html_theme_options = {
     'header_inverse': True,
     'relbar_inverse': True,
     'inner_theme': True,
-    'inner_theme_name': 'bootswatch-spacelab',
+    'inner_theme_name': 'bootswatch-readable',
     'lang': 'jp',
     'sidebar_span': 3,
     'googlewebfont': True,
