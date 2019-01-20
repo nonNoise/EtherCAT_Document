@@ -113,7 +113,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'EtherCAT-Documentdoc'
+htmlhelp_basename = u'EtherCAT 開発日誌'
 
 
 # -- Options for LaTeX output ------------------------------------------------
