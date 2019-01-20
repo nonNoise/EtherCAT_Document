@@ -2,9 +2,9 @@ import pexpect
 import argparse
 import sys
 
-print ('Username:'+sys.argv[1])
-print ('Password:'+sys.argv[2])
-print ('Commit:'+sys.argv[3])
+print ('Username: '+sys.argv[1])
+print ('Password: '+sys.argv[2])
+print ('Commit: '+sys.argv[3])
 
 command = "make html"
 print(command)
