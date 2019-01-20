@@ -18,6 +18,7 @@ print('Username:',sys.argv[1])
 print('Password:',sys.argv[2])
 
 prc = pexpect.spawn("git push origin master")
+print(prc.before)
 prc.expect(r"^Username")
 print(prc.before)
 prc.sendline(sys.argv[0].strip())
