@@ -82,9 +82,9 @@ extensions = ['sphinxjp.themes.basicstrap']
 html_theme = 'basicstrap'
 html_theme_options = {
     'header_inverse': True,
-    'relbar_inverse': False,
+    'relbar_inverse': True,
     'inner_theme': True,
-    'inner_theme_name': 'bootswatch-paper',
+    'inner_theme_name': 'bootswatch-cerulean',
     'lang': 'jp',
     'sidebar_span': 3,
     'googlewebfont': True,
