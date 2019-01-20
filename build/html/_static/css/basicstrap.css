@@ -40,6 +40,45 @@ div.hint p.admonition-title:before,
 div.tip p.admonition-title:before {
   content: "\f0eb\00a0";
 }
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+select,
+textarea,
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.navbar,
+.navbar-search .search-query,
+.navbar .navbar-search .search-query,
+/*
+.navbar .search-query::-moz-placeholder,
+.navbar .search-query::-webkit-input-placeholder,
+*/
+.navbar .brand,
+.navbar .nav>li>a,
+.navbar .navbar-text,
+.navbar .dropdown-menu li>a,
+.nav li>a,
+div.subnav,
+div.subnav .nav>li>a,
+div.subnav .nav>li:first-child>a,
+div.subnav .nav>li.active>a,
+legend,
+.btn,
+.alert-heading
+{
+  font-family: 'Lily Script One' cursive;
+}
 
 h2, h3, h4, h5, h6 {
  padding-bottom: 10px;

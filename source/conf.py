@@ -85,6 +85,11 @@ html_theme_options = {
     'relbar_inverse': True,
     'inner_theme': True,
     'inner_theme_name': 'bootswatch-spacelab',
+    'lang': 'jp',
+    'sidebar_span': 3,
+    'googlewebfont': True,
+    'googlewebfont_url': 'http://fonts.googleapis.com/css?family=Lily+Script+One',
+    'googlewebfont_style': u"font-family: 'Lily Script One' cursive;",
 }
 
 
