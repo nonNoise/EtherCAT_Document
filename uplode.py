@@ -1,16 +1,3 @@
-import subprocess
-
-
-subprocess.call( ["make", "html"] ) 
-
-print("-")
-subprocess.call( ["git", "add","-A"] ) 
-print("-")
-subprocess.call( ["git", "add","-A"] ) 
-print("-")
-
-
-
 import pexpect
 import sys
 
@@ -19,7 +6,6 @@ prc.expect( pexpect.EOF )
 
 prc = pexpect.spawn("git add -A")
 prc.expect( pexpect.EOF )
-
 
 prc = pexpect.spawn("git commit -a -m \"test init\" ")
 prc.expect( pexpect.EOF )
@@ -30,5 +16,3 @@ prc.sendline("nonNoise")
 prc.expect("Password for 'https://nonNoise@github.com':")
 prc.sendline("1987kitagami")
 prc.expect( pexpect.EOF )
-
-prc.logfile = sys.stdout
