@@ -13,4 +13,32 @@ EtherCAT 開発日誌
 
 EtherCATについては公式の内容を参考にしてください。
 
+https://www.ethercat.org/jp.htm
+
+
+
+目次
+---------------------------------------------------
+
+
+
+著者について
+---------------------------------------------------
+
+本開発日誌は、ArtifactNoise,LLPに所属する北神が書いております。
+
+ArtifactNoise,LLPは、EtherCATのメンバーとして登録されてます。
+
+https://www.ethercat.org/jp/members/members_02F13528E14E4087BDE04CA4664FE382.htm
+
+また、ベンダーIDも取得し、製品の開発についても前向きに検討しております。
+
+
+ArtifactNoise,LLP
+.. image:: ./img/logo-mini-320-132.png
+	:alt: ArtifactNoise
+	:scale: 40%
+	:target: http://artifactnoise.com
+
+
 
