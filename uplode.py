@@ -16,6 +16,8 @@ print(prc.before)
 
 print('Username:',sys.argv[1])
 print(len(sys.argv[1]))
+print(len("nonNoise"))
+
 print('Password:',sys.argv[2])
 print(len(sys.argv[2]))
 
