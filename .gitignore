@@ -101,5 +101,4 @@ venv.bak/
 
 # mypy
 .mypy_cache/
-build/html/
-build/html/
+
