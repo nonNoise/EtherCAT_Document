@@ -37,6 +37,7 @@ https://www.ethercat.org/jp/members/members_02F13528E14E4087BDE04CA4664FE382.htm
 ArtifactNoise,LLP
 
 .. image:: ./img/logo-mini-320-132.png
+
     :alt: ArtifactNoise
     :scale: 40%
     :target: http://artifactnoise.com
