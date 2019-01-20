@@ -23,7 +23,7 @@ print(len(sys.argv[2]))
 
 prc = pexpect.spawn("git push origin master")
 prc.expect("Username for 'https://github.com':")
-prc.sendline("nonNoise")
+prc.sendline(sys.argv[1])
 prc.expect("Password for 'https://nonNoise@github.com':")
 prc.sendline(sys.argv[1].strip())
 print(prc.before)
