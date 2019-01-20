@@ -84,7 +84,7 @@ html_theme_options = {
     'header_inverse': True,
     'relbar_inverse': True,
     'inner_theme': True,
-    'inner_theme_name': 'bootswatch-readable',
+    'inner_theme_name': 'bootswatch-cerulean',
     'lang': 'jp',
     'sidebar_span': 3,
     'googlewebfont': True,
