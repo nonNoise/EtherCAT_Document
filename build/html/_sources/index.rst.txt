@@ -39,7 +39,7 @@ ArtifactNoise,LLP
 .. image:: ./img/logo-mini-320-132.png
 
     :alt: ArtifactNoise
-    :scale: 40%
+    :scale: 100%
     :target: http://artifactnoise.com
 
 
