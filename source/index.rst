@@ -72,3 +72,7 @@ ArtifactNoise,LLP
 
 
 
+
+.. raw:: html
+
+	<meta name="google-site-verification" content="ZZJWIExpSI4kqI2OdgaFy0BoygvFoBtrRHVR7wK2lBM" />
