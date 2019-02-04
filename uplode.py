@@ -35,6 +35,7 @@ time.sleep(1)
 prc.expect("Username for 'https://github.com':")
 print(prc.before)
 prc.sendline(sys.argv[1])
+prc.expect(pexpect.EOF)
 
 prc.expect("Password for 'https://"+sys.argv[1]+"@github.com':")
 print(prc.before)
