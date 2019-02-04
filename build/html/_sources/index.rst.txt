@@ -21,6 +21,20 @@ EtherCATについては公式の内容を参考にしてください。
 https://www.ethercat.org/jp.htm
 
 
+対象モジュール
+---------------------------------------------------
+
+- EtherCAT GPIO16ポート LAN9252使用評価ボード
+
+.. image:: ./img/be4211cc89ca84f60e51.jpeg
+
+https://artifactnoise.stores.jp/items/5c545082aee1bb192c4182eb
+
+- EtherCATモジュール用LEDx16ボード
+
+.. image:: ./img/04c102f3de033396ed53.jpeg
+
+https://artifactnoise.stores.jp/items/5c545193aee1bb37ea418289
 
 目次
 ---------------------------------------------------
@@ -48,8 +62,13 @@ https://www.ethercat.org/jp.htm
 コラム
 ---------------------------------------------------
 
-- 
+- Linuxで試す方法
 
+- RaspberryPiで試す方法
+
+- Windowsで試す方法（調査中)
+
+- MacOSで試す方法（調査中)
 
 著者について
 ---------------------------------------------------

@@ -31,7 +31,6 @@ time.sleep(1)
 command = "git push origin master"
 print(command)
 prc = pexpect.spawn(command)
-time.sleep(1)
 try:
 	prc.expect("Username for 'https://github.com':")
 	print(prc.before)
