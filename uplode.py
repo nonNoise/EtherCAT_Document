@@ -25,7 +25,7 @@ command = "git commit -a -m \"" + sys.argv[3]+ "\""
 print(command)
 prc = pexpect.spawn(command)
 prc.expect( pexpect.EOF )
-#print(prc.before)
+print(prc.before)
 time.sleep(1)
 
 command = "git push origin master"
@@ -33,9 +33,11 @@ print(command)
 prc = pexpect.spawn(command)
 time.sleep(1)
 prc.expect("Username for 'https://github.com':")
+print(prc.before)
 prc.sendline(sys.argv[1])
 
 prc.expect("Password for 'https://"+sys.argv[1]+"@github.com':")
+print(prc.before)
 prc.sendline(sys.argv[2])
 prc.expect(pexpect.EOF)
 print(prc.before)
