@@ -29,8 +29,8 @@ prc.expect( pexpect.EOF )
 time.sleep(1)
 
 command = "git push origin master"
+time.sleep(5)
 print(command)
-time.sleep(1)
 prc = pexpect.spawn(command)
 prc.expect("Username for 'https://github.com':")
 prc.sendline(sys.argv[1])
