@@ -32,16 +32,17 @@ command = "git push origin master"
 print(command)
 prc = pexpect.spawn(command)
 time.sleep(1)
-prc.expect("Username for 'https://github.com':")
-print(prc.before)
-prc.sendline(sys.argv[1])
-prc.expect(pexpect.EOF)
-
-prc.expect("Password for 'https://"+sys.argv[1]+"@github.com':")
-print(prc.before)
-prc.sendline(sys.argv[2])
-prc.expect(pexpect.EOF)
-print(prc.before)
+try:
+	prc.expect("Username for 'https://github.com':")
+	print(prc.before)
+	prc.sendline(sys.argv[1])
+	prc.expect("Password for 'https://"+sys.argv[1]+"@github.com':")
+	print(prc.before)
+	prc.sendline(sys.argv[2])
+	prc.expect(pexpect.EOF)
+except pexpect.EOF:	
+	prc.expect(pexpect.EOF)
+	
 time.sleep(1)
 
 print("Complete !!")
