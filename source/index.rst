@@ -20,31 +20,15 @@ EtherCATについては公式の内容を参考にしてください。
 
 https://www.ethercat.org/jp.htm
 
-
-対象モジュール
----------------------------------------------------
-
-
-- EtherCAT GPIO16ポート LAN9252使用評価ボード
-
-.. image:: ./img/be4211cc89ca84f60e51.jpeg
-    :scale: 80%
-    :target: https://artifactnoise.stores.jp/items/5c545082aee1bb192c4182eb
-
-- EtherCATモジュール用LEDx16ボード
-
-.. image:: ./img/04c102f3de033396ed53.jpeg
-    :scale: 80%
-    :target: https://artifactnoise.stores.jp/items/5c545193aee1bb37ea418289
-
-
-
 目次
 ---------------------------------------------------
 
 ※以下の内容は常に変化と変更があります。書かない場合もあります。書籍化になる場合もあります。参考程度に。
 
-- 第1章   EtherCATとは
+.. toctree::
+    :maxdepth: 1
+
+    rst/S01
 
 - 第2章   EtherCATの動作について
 
@@ -65,13 +49,33 @@ https://www.ethercat.org/jp.htm
 コラム
 ---------------------------------------------------
 
-- Linuxで試す方法
+.. toctree::
+    :maxdepth: 1
 
-- RaspberryPiで試す方法
+    rst/C01
+    rst/C02
 
 - Windowsで試す方法（調査中)
 
 - MacOSで試す方法（調査中)
+
+
+対象モジュール
+---------------------------------------------------
+
+- `EtherCAT GPIO16ポート LAN9252使用評価ボード <https://artifactnoise.stores.jp/items/5c545082aee1bb192c4182eb>`_
+
+- `EtherCATモジュール用LEDx16ボード <https://artifactnoise.stores.jp/items/5c545193aee1bb37ea418289>`_
+
+.. image:: ./img/be4211cc89ca84f60e51.jpeg
+    :scale: 40%
+    :target: https://artifactnoise.stores.jp/items/5c545082aee1bb192c4182eb
+
+.. image:: ./img/04c102f3de033396ed53.jpeg
+    :scale: 40%
+    :target: https://artifactnoise.stores.jp/items/5c545193aee1bb37ea418289
+
+
 
 著者について
 ---------------------------------------------------
@@ -93,7 +97,13 @@ ArtifactNoise,LLP
 	:target: http://artifactnoise.com
 
 
-
+-----------------------------------------------------------------
+管理情報
+-----------------------------------------------------------------
+:管理者: 北神 雄太(Yuta Kitagami)
+:連絡先: kitagami@Artifactnoise.com
+:公開日: 2019/01/30 
+:更新日: 2019/02/05
 
 .. raw:: html
 
