@@ -109,4 +109,9 @@ ArtifactNoise,LLP
 
 .. raw:: html
 
-	<meta name="google-site-verification" content="ZZJWIExpSI4kqI2OdgaFy0BoygvFoBtrRHVR7wK2lBM" />
+    <meta name="google-site-verification" content="ZZJWIExpSI4kqI2OdgaFy0BoygvFoBtrRHVR7wK2lBM" />
+
+
+.. raw:: html
+    
+    <table border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><a href="http://www.rays-counter.com/"><img src="http://www.rays-counter.com/d428_f6_022/5c596a62edadc/" alt="アクセスカウンター" border="0"></a></td></tr><tr><td align="center"><img src="http://www.rays-counter.com/images/counter_01.gif" border="0"><img src="http://www.rays-counter.com/images/counter_02.gif" border="0"><img src="http://www.rays-counter.com/images/counter_03.gif" border="0"><img src="http://www.rays-counter.com/images/counter_04.gif" border="0" ><img src="http://www.rays-counter.com/images/counter_05.gif" border="0"></td></tr></table>
