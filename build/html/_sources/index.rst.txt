@@ -28,14 +28,14 @@ https://www.ethercat.org/jp.htm
 - EtherCAT GPIO16ポート LAN9252使用評価ボード
 
 .. image:: ./img/be4211cc89ca84f60e51.jpeg
-   :scale: 99%
-   :target: https://artifactnoise.stores.jp/items/5c545082aee1bb192c4182eb
+    :scale: 80%
+    :target: https://artifactnoise.stores.jp/items/5c545082aee1bb192c4182eb
 
 - EtherCATモジュール用LEDx16ボード
 
 .. image:: ./img/04c102f3de033396ed53.jpeg
-   :scale: 99%
-   :target: https://artifactnoise.stores.jp/items/5c545193aee1bb37ea418289
+    :scale: 80%
+    :target: https://artifactnoise.stores.jp/items/5c545193aee1bb37ea418289
 
 
 
