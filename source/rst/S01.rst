@@ -48,9 +48,8 @@ EtherCATの通信プロトコルはIEEEAに登録済みであり、パケット�
 .. toctree::
     :maxdepth: 1
 
-    rst/S01
-    rst/S02
-
+    S01
+    S02
 
 - 第3章   EtherCATのプロトコルについて
 
@@ -74,8 +73,8 @@ EtherCATの通信プロトコルはIEEEAに登録済みであり、パケット�
 .. toctree::
     :maxdepth: 1
 
-    rst/C01
-    rst/C02
+    C01
+    C02
 
 - Windowsで試す方法（調査中)
 

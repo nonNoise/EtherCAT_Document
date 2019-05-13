@@ -80,8 +80,8 @@ EtherCATがもっとも有益になる場面は、図のように沢山の機器
 .. toctree::
     :maxdepth: 1
 
-    rst/S01
-    rst/S02
+    S01
+    S02
 
 - 第3章   EtherCATのプロトコルについて
 
@@ -105,8 +105,8 @@ EtherCATがもっとも有益になる場面は、図のように沢山の機器
 .. toctree::
     :maxdepth: 1
 
-    rst/C01
-    rst/C02
+    C01
+    C02
 
 - Windowsで試す方法（調査中)
 
