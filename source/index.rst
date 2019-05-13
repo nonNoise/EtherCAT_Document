@@ -29,13 +29,6 @@ https://www.ethercat.org/jp.htm
     rst/M01
     rst/M02
 
-購入サイト
----------------------------------------------------
-
-- `EtherCAT GPIO16ポート LAN9252使用評価ボード <https://artifactnoise.stores.jp/items/5c545082aee1bb192c4182eb>`_
-
-- `EtherCATモジュール用LEDx16ボード <https://artifactnoise.stores.jp/items/5c545193aee1bb37ea418289>`_
-
 
 目次
 ---------------------------------------------------
@@ -76,6 +69,13 @@ https://www.ethercat.org/jp.htm
 - Windowsで試す方法（調査中)
 
 - MacOSで試す方法（調査中)
+
+購入サイト
+---------------------------------------------------
+
+- `EtherCAT GPIO16ポート LAN9252使用評価ボード <https://artifactnoise.stores.jp/items/5c545082aee1bb192c4182eb>`_
+
+- `EtherCATモジュール用LEDx16ボード <https://artifactnoise.stores.jp/items/5c545193aee1bb37ea418289>`_
 
 
 
