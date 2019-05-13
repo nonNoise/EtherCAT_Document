@@ -16,8 +16,8 @@ EtherCATの規格団体「EtherCAT Technology Group」（略してETG）が管�
 EtherCATの通信プロトコルはIEEEAに登録済みであり、パケットの仕組みに関しては会員にならなくても知り得ることができます。
 また、EtherCATを組み込んだり利用したりする際に特別な費用を払うといったこともなく、自由に利用することは可能です。
 
-
 |
+
 .. image:: ../img/top.JPG
    :scale: 20%
 
