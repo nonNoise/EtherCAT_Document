@@ -73,14 +73,14 @@ EtherCATは一般のPC(Linux)に付属する有線LANを使って通信を行い
 :I/O電圧: 3.3V
 :EtherNetケーブル: Cat5以上
 
-.. image:: ../img/ピンアサイン.png
+.. image:: ../img/pin_assin.png
     :scale: 50%
 
 回路図
 --------------------------------------------------
 
 .. image:: ../img/p02.png
-    :scale: 50%
+    :scale: 10%
 
 |
 
