@@ -57,7 +57,6 @@ EtherCATがもっとも有益になる場面は、図のように沢山の機器
 EtherCATはドイツの産業メーカー BECKHOFF社が提唱している規格で、BECKHOFF社が想像すしている図は以下のようなものである。
 
 .. image:: ../img/S02/topology.gif
-    :scale: 40%
 
 このように、EtherCATは多くの機器を接続することに強く、特に工場に特化した有力な通信方式です。
 
