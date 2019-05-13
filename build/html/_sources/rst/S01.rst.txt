@@ -43,6 +43,8 @@ EtherCATの通信プロトコルはIEEEAに登録済みであり、パケット�
 目次
 ---------------------------------------------------
 
+`TOPページ https://nonnoise.github.io/EtherCAT_Document/build/html/index.html`_
+
 - 第1章   EtherCATとは
 
 - 第2章   EtherCATの動作について
@@ -76,11 +78,3 @@ EtherCATの通信プロトコルはIEEEAに登録済みであり、パケット�
 
 - MacOSで試す方法（調査中)
 
-|
-
-■ 管理情報
-
-:管理者: 北神 雄太(Yuta Kitagami)
-:連絡先: kitagami@Artifactnoise.com
-:公開日: 2019/02/05 
-:更新日: 2019/02/05
