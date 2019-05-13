@@ -18,8 +18,8 @@ EtherCATの通信プロトコルはIEEEAに登録済みであり、パケット�
 
 
 |
-
-|
+.. image:: ./img/top.JPG
+   :scale: 20%
 
 |
 
