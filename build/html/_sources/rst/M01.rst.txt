@@ -74,7 +74,7 @@ EtherCATは一般のPC(Linux)に付属する有線LANを使って通信を行い
 :EtherNetケーブル: Cat5以上
 
 .. image:: ../img/pin_assin.png
-    :scale: 50%
+    :scale: 20%
 
 回路図
 --------------------------------------------------
