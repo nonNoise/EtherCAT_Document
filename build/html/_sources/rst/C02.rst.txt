@@ -16,13 +16,6 @@ RaspberryPiはLinuxを搭載しており、手軽にネットワークの勉強�
 
 - `EtherCATモジュール用LEDx16ボード <https://artifactnoise.stores.jp/items/5c545193aee1bb37ea418289>`_
 
-.. image:: ../img/be4211cc89ca84f60e51.jpeg
-    :scale: 40%
-    :target: https://artifactnoise.stores.jp/items/5c545082aee1bb192c4182eb
-
-.. image:: ../img/04c102f3de033396ed53.jpeg
-    :scale: 40%
-    :target: https://artifactnoise.stores.jp/items/5c545193aee1bb37ea418289
 
 
 モジュール側のセットアップ

@@ -61,7 +61,6 @@ https://www.ethercat.org/jp.htm
 
 - MacOSで試す方法（調査中)
 
-
 対象モジュール
 ---------------------------------------------------
 
@@ -69,14 +68,11 @@ https://www.ethercat.org/jp.htm
 
 - `EtherCATモジュール用LEDx16ボード <https://artifactnoise.stores.jp/items/5c545193aee1bb37ea418289>`_
 
-.. image:: ./img/be4211cc89ca84f60e51.jpeg
-    :scale: 40%
-    :target: https://artifactnoise.stores.jp/items/5c545082aee1bb192c4182eb
+.. toctree::
+    :maxdepth: 1
 
-.. image:: ./img/04c102f3de033396ed53.jpeg
-    :scale: 40%
-    :target: https://artifactnoise.stores.jp/items/5c545193aee1bb37ea418289
-
+    rst/M01
+    rst/M02
 
 
 著者について
@@ -105,12 +101,10 @@ ArtifactNoise,LLP
 :管理者: 北神 雄太(Yuta Kitagami)
 :連絡先: kitagami@Artifactnoise.com
 :公開日: 2019/01/30 
-:更新日: 2019/02/05
+:更新　: 2019/02/05
+:更新　: 2019/05/13   モジュールの説明追加
 
 .. raw:: html
 
     <meta name="google-site-verification" content="ZZJWIExpSI4kqI2OdgaFy0BoygvFoBtrRHVR7wK2lBM" />
 
-.. raw:: html
-
-    <table border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><a href="http://www.rays-counter.com/"><img src="http://www.rays-counter.com/d428_f6_022/5c596a62edadc/" alt="アクセスカウンター" border="0"></a></td></tr><tr><td align="center"><img src="http://www.rays-counter.com/images/counter_01.gif" border="0"><img src="http://www.rays-counter.com/images/counter_02.gif" border="0"><img src="http://www.rays-counter.com/images/counter_03.gif" border="0"><img src="http://www.rays-counter.com/images/counter_04.gif" border="0" ><img src="http://www.rays-counter.com/images/counter_05.gif" border="0"></td></tr></table>
