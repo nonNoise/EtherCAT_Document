@@ -3,7 +3,7 @@ EtherCAT GPIO16ポート LAN9252使用評価ボード
 =================================================================
 
 .. image:: ../img/be4211cc89ca84f60e51.jpeg
-    :scale: 40%
+    :scale: 90%
     :target: https://artifactnoise.stores.jp/items/5c545082aee1bb192c4182eb
 
 
@@ -29,7 +29,7 @@ EtherCATの情報を記録するEEPROMもボードに搭載してあり、自由
 
 - EtherCATモジュールにLEDモジュールを接続する。
 
-> LEDモジュールはこちら `EtherCATモジュール用LEDx16ボード <https://artifactnoise.stores.jp/items/5c545193aee1bb37ea418289>`_
+- LEDモジュールはこちら `EtherCATモジュール用LEDx16ボード <https://artifactnoise.stores.jp/items/5c545193aee1bb37ea418289>`_
 
 - LEDモジュールを使用しない場合は、ピンソケットに電源5Vを供給する。
 

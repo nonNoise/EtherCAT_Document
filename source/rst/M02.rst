@@ -3,7 +3,7 @@ EtherCATモジュール用LEDx16ボード
 =================================================================
 
 .. image:: ../img/04c102f3de033396ed53.jpeg
-    :scale: 40%
+    :scale: 90%
     :target: https://artifactnoise.stores.jp/items/5c545193aee1bb37ea418289
 
 概要
