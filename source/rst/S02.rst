@@ -15,9 +15,6 @@ EtherCATはネットワークを使用した通信規格であるが、産業用
 
 .. image:: ../img/S02/図1.png
     :scale: 40%
-    :target: https://artifactnoise.stores.jp/items/5c545082aee1bb192c4182eb
-
-
 
 一般家庭のネットワークは、以下のような接続が多いと思われる。
 
@@ -31,9 +28,6 @@ EtherCATで使用するネットワーク
 
 .. image:: ../img/S02/図2.png
     :scale: 40%
-    :target: https://artifactnoise.stores.jp/items/5c545082aee1bb192c4182eb
-
-
 
 EtherCATに関しては、このような通信形式を使わず、
 「スイッチングハブ」や「ルーター」を省き、
@@ -50,7 +44,6 @@ EtherCAT特有の仕組みですが、EtherCATのスレーブには必ずポー�
 
 .. image:: ../img/S02/図3.png
     :scale: 40%
-    :target: https://artifactnoise.stores.jp/items/5c545082aee1bb192c4182eb
 
 EtherCATがもっとも有益になる場面は、図のように沢山の機器を連結して接続出来、
 またそれをPC1台で制御することができます。
@@ -60,7 +53,13 @@ EtherCATがもっとも有益になる場面は、図のように沢山の機器
 
 また、一般的なPCを使用することができる為、インターネットへの通信は無線LANを使い、余っている有線LANをEtherCATで使用することで、ネットワークを両立した仕組みを作ることも可能です。
 
-このように、EtherCATは大変面白く、また工場に特化した有力な通信方式です。
+
+EtherCATはドイツの産業メーカー BECKHOFF社が提唱している規格で、BECKHOFF社が想像すしている図は以下のようなものである。
+
+.. image:: ../img/S02/topology.gif
+    :scale: 40%
+
+このように、EtherCATは多くの機器を接続することに強く、特に工場に特化した有力な通信方式です。
 
 
 対象モジュール

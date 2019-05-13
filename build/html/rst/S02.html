@@ -187,7 +187,7 @@
 <p>EtherCATはネットワークを使用した通信規格であるが、産業用と名が付くが、民生機器を使用して通信を行う事ができる。</p>
 <div class="section" id="id1">
 <h2>一般家庭や業務で使用しているネットワーク<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<a class="reference external image-reference" href="https://artifactnoise.stores.jp/items/5c545082aee1bb192c4182eb"><img alt="../_images/図1.png" src="../_images/図1.png" style="width: 723.2px; height: 340.8px;" /></a>
+<a class="reference internal image-reference" href="../_images/図1.png"><img alt="../_images/図1.png" src="../_images/図1.png" style="width: 723.2px; height: 340.8px;" /></a>
 <p>一般家庭のネットワークは、以下のような接続が多いと思われる。</p>
 <p>PCやノートPC、スマフォがネットワークを使用する機器で、
 その通信を制御する「スイッチングハブ」「ルーター」がある。
@@ -196,7 +196,7 @@
 </div>
 <div class="section" id="id2">
 <h2>EtherCATで使用するネットワーク<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<a class="reference external image-reference" href="https://artifactnoise.stores.jp/items/5c545082aee1bb192c4182eb"><img alt="../_images/図2.png" src="../_images/図2.png" style="width: 748.0px; height: 378.8px;" /></a>
+<a class="reference internal image-reference" href="../_images/図2.png"><img alt="../_images/図2.png" src="../_images/図2.png" style="width: 748.0px; height: 378.8px;" /></a>
 <p>EtherCATに関しては、このような通信形式を使わず、
 「スイッチングハブ」や「ルーター」を省き、
 またグローバルなネットワークに接続しない閉じた通信を行うことが出来ます。</p>
@@ -204,12 +204,14 @@
 <p>そして、２台目には１台目から１本もらい、２台目へ接続します。</p>
 <p>３台目以降は、先ほどの２台目と同じ　１本もらい、１本渡す　といった形になります。</p>
 <p>EtherCAT特有の仕組みですが、EtherCATのスレーブには必ずポートが二つあり、１台前からの通信用と１台後の通信用に別れています。</p>
-<a class="reference external image-reference" href="https://artifactnoise.stores.jp/items/5c545082aee1bb192c4182eb"><img alt="../_images/図3.png" src="../_images/図3.png" style="width: 767.2px; height: 448.0px;" /></a>
+<a class="reference internal image-reference" href="../_images/図3.png"><img alt="../_images/図3.png" src="../_images/図3.png" style="width: 767.2px; height: 448.0px;" /></a>
 <p>EtherCATがもっとも有益になる場面は、図のように沢山の機器を連結して接続出来、
 またそれをPC1台で制御することができます。</p>
 <p>最大65,535のデバイスが接続でき、またそれぞれをアドレスで指定して情報を送信したり受け取ったり、さらには状態の確認を行うことできます。</p>
 <p>また、一般的なPCを使用することができる為、インターネットへの通信は無線LANを使い、余っている有線LANをEtherCATで使用することで、ネットワークを両立した仕組みを作ることも可能です。</p>
-<p>このように、EtherCATは大変面白く、また工場に特化した有力な通信方式です。</p>
+<p>EtherCATはドイツの産業メーカー BECKHOFF社が提唱している規格で、BECKHOFF社が想像すしている図は以下のようなものである。</p>
+<a class="reference internal image-reference" href="../_images/topology.gif"><img alt="../_images/topology.gif" src="../_images/topology.gif" style="width: 222.8px; height: 97.2px;" /></a>
+<p>このように、EtherCATは多くの機器を接続することに強く、特に工場に特化した有力な通信方式です。</p>
 </div>
 <div class="section" id="id3">
 <h2>対象モジュール<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
