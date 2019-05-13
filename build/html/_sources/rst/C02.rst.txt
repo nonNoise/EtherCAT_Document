@@ -8,14 +8,14 @@ RaspberryPiはLinuxを搭載しており、手軽にネットワークの勉強�
 :対応モデル: RaspberryPi 3B+, 3B, 2B
 :対応OS: Rasbian OS
 
-
 対象モジュール
 ---------------------------------------------------
 
-- `EtherCAT GPIO16ポート LAN9252使用評価ボード <https://artifactnoise.stores.jp/items/5c545082aee1bb192c4182eb>`_
+.. toctree::
+    :maxdepth: 1
 
-- `EtherCATモジュール用LEDx16ボード <https://artifactnoise.stores.jp/items/5c545193aee1bb37ea418289>`_
-
+    rst/M01
+    rst/M02
 
 
 モジュール側のセットアップ
