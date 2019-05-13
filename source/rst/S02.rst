@@ -81,8 +81,7 @@ EtherCATがもっとも有益になる場面は、図のように沢山の機器
     :maxdepth: 1
 
     rst/S01
-
-- 第2章   EtherCATの動作について
+    rst/S02
 
 - 第3章   EtherCATのプロトコルについて
 

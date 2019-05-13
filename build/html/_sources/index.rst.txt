@@ -46,8 +46,7 @@ https://www.ethercat.org/jp.htm
     :maxdepth: 1
 
     rst/S01
-
-- 第2章   EtherCATの動作について
+    rst/S02
 
 - 第3章   EtherCATのプロトコルについて
 
