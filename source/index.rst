@@ -38,7 +38,8 @@ https://www.ethercat.org/jp.htm
 
     rst/S01
     rst/S02_1
-    rst/S02_2
+
+- 第2章 - 2 EtherCATの通信について
 
 - 第3章   EtherCATのプロトコルについて
 
