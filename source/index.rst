@@ -29,6 +29,11 @@ https://www.ethercat.org/jp.htm
     rst/M01
     rst/M02
 
+.. raw:: html
+
+    <div class="storesjp-button" data-storesjp-item="5c545082aee1bb192c4182eb" data-storesjp-variation="5c545082aee1bb192c4182ed" data-storesjp-name="artifactnoise" data-storesjp-layout="layout_b" data-storesjp-lang="ja" ></div><script>(function(d,s,id){var st=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}var nst=d.createElement(s);nst.id=id;nst.src="//btn.stores.jp/button.js";nst.charset="UTF-8";st.parentNode.insertBefore(nst,st);})(document, "script", "storesjp-button");</script>
+
+
 
 目次
 ---------------------------------------------------
