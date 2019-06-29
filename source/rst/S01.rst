@@ -37,9 +37,13 @@ EtherCATの通信プロトコルはIEEEAに登録済みであり、パケット�
 
 `TOPページ <https://nonnoise.github.io/EtherCAT_Document/build/html/index.html>`_
 
-- 第1章   EtherCATとは
+.. toctree::
+    :maxdepth: 1
 
-- 第2章   EtherCATの動作について
+    rst/S01
+    rst/S02_1
+
+- 第2章-2 EtherCATの通信について
 
 - 第3章   EtherCATのプロトコルについて
 
