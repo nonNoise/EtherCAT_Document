@@ -20,7 +20,7 @@ RaspberryPiはLinuxを搭載しており、手軽にネットワークの勉強�
 - 3. RaspberryPiに電源を入れ、WiFiよりSSHアクセス、もしくはシリアルポート、デスクトップよりマウスでコンソールを立ち上げます。
 
 .. image:: ../img/DSC_3487.jpg
-   :scale: 20%
+   :scale: 10%
 
 |
 
@@ -29,7 +29,7 @@ RaspberryPiはLinuxを搭載しており、手軽にネットワークの勉強�
 USBは電源供給のみ行います。RaspberryPiの余っているUSBポートに接続します。
 
 .. image:: ../img/DSC_3488.jpg
-   :scale: 20%
+   :scale: 10%
 
 |
 
@@ -44,7 +44,7 @@ USBは電源供給のみ行います。RaspberryPiの余っているUSBポート
     sudo python3 test.py
 
 .. image:: ../img/gitclone.png
-   :scale: 20%
+   :scale: 100%
 
 |
 
@@ -53,26 +53,26 @@ USBは電源供給のみ行います。RaspberryPiの余っているUSBポート
   EtherCATでは、PortAがマスター側と規定されているため、PortA（写真では下側）のLANコネクタに接続します。
 
   .. image:: ../img/DSC_3489.jpg
-   :scale: 20%
+   :scale: 10%
 
 |
 
 - 7. EtherCATボードのLINC-AのLEDが点滅することを確認します。
 
   .. image:: ../img/DSC_3489.jpg
-   :scale: 50%
+   :scale: 10%
 
 - 8. 以下のコマンドを実行します。
 
 .. image:: ../img/testpy.png
-   :scale: 20%
+   :scale: 10%
 
 |
 
 - 9. 無事にうまく通信ができれば、RUNが点灯し、16個のLEDが点灯すると思います。
 
 .. image:: ../img/DSC_3487.jpg
-   :scale: 20%
+   :scale: 10%
 
 |
 
