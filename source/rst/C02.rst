@@ -68,6 +68,7 @@ USBは電源供給のみ行います。RaspberryPiの余っているUSBポート
    :scale: 20%
 
 |
+
 - 9. 無事にうまく通信ができれば、RUNが点灯し、16個のLEDが点灯すると思います。
 
 .. image:: ../img/DSC_3487.jpg

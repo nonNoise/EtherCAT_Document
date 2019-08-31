@@ -52,7 +52,7 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="top" title="EtherCAT 開発日誌  documentation" href="../index.html" />
     <link rel="up" title="第2章-1 EtherCATの動作について" href="S02_1.html" />
-    <link rel="next" title="コラム RaspberryPiで試す方法" href="C02.html" />
+    <link rel="next" title="コラム RaspberryPiでEtherCATを動かそう！" href="C02.html" />
     <link rel="prev" title="第2章-1 EtherCATの動作について" href="S02_1.html" /> 
   </head>
   <body role="document">
@@ -86,7 +86,7 @@
 
             
               <li><a href="S02_1.html" title="第2章-1 EtherCATの動作について" accesskey="P">previous </a></li>
-              <li><a href="C02.html" title="コラム RaspberryPiで試す方法" accesskey="N">next </a></li>
+              <li><a href="C02.html" title="コラム RaspberryPiでEtherCATを動かそう！" accesskey="N">next </a></li>
               <li><a href="../genindex.html" title="General Index" accesskey="I">index </a></li>
               <li><a href="S01.html" >第1章   EtherCATとは</a></li>
               <li><a href="S02_1.html" accesskey="U">第2章-1     EtherCATの動作について</a></li>
@@ -138,7 +138,7 @@
                         title="previous chapter">第2章-1     EtherCATの動作について</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="C02.html"
-                        title="next chapter">コラム　RaspberryPiで試す方法</a></p>
+                        title="next chapter">コラム　RaspberryPiでEtherCATを動かそう！</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -187,9 +187,9 @@
 <div class="section" id="id2">
 <h2>モジュール側のセットアップ<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>EtherCATモジュールにLEDモジュールを接続する。</li>
-<li>LEDモジュールを使用しない場合は、ピンソケットに電源5Vを供給する。</li>
-<li>POWERのLEDが点灯する事を確認</li>
+<li><p>EtherCATモジュールにLEDモジュールを接続する。</p></li>
+<li><p>LEDモジュールを使用しない場合は、ピンソケットに電源5Vを供給する。</p></li>
+<li><p>POWERのLEDが点灯する事を確認</p></li>
 </ul>
 </div>
 <div class="section" id="pc">
@@ -197,17 +197,17 @@
 <p>EtherCATは一般のPCに付属する有線LANを使って通信を行います。</p>
 <p>物理的なセットアップは、</p>
 <ul class="simple">
-<li>PCの有線LANポートにLANケーブルを接続する。</li>
-<li>その有線LANを直接 EtherCATのAポートに接続する。</li>
-<li>EtherCATのアクセスランプの点滅を確認する。</li>
-<li>Linux側では有線LANが接続されたが、インターネットへは未接続といったアラートが出る。（問題ない）</li>
+<li><p>PCの有線LANポートにLANケーブルを接続する。</p></li>
+<li><p>その有線LANを直接 EtherCATのAポートに接続する。</p></li>
+<li><p>EtherCATのアクセスランプの点滅を確認する。</p></li>
+<li><p>Linux側では有線LANが接続されたが、インターネットへは未接続といったアラートが出る。（問題ない）</p></li>
 </ul>
 <p>続いて、ソフトウェアの準備です。</p>
 <ul class="simple">
-<li>コンソールを開く</li>
-<li>git clone <a class="reference external" href="https://github.com/nonNoise/EtherCAT_Master.git">https://github.com/nonNoise/EtherCAT_Master.git</a></li>
-<li>cd ./EtherCAT_Master</li>
-<li>sudo python3 test.py</li>
+<li><p>コンソールを開く</p></li>
+<li><p>git clone <a class="reference external" href="https://github.com/nonNoise/EtherCAT_Master.git">https://github.com/nonNoise/EtherCAT_Master.git</a></p></li>
+<li><p>cd ./EtherCAT_Master</p></li>
+<li><p>sudo python3 test.py</p></li>
 </ul>
 <p>これでモジュールが点滅したりします。</p>
 <div class="line-block">
@@ -226,20 +226,20 @@
 <div class="line"><br /></div>
 </div>
 <p>■ 管理情報</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">管理者:</th><td class="field-body">北神 雄太(Yuta Kitagami)</td>
-</tr>
-<tr class="field-even field"><th class="field-name">連絡先:</th><td class="field-body"><a class="reference external" href="mailto:kitagami&#37;&#52;&#48;Artifactnoise&#46;com">kitagami<span>&#64;</span>Artifactnoise<span>&#46;</span>com</a></td>
-</tr>
-<tr class="field-odd field"><th class="field-name">公開日:</th><td class="field-body">2019/02/05</td>
-</tr>
-<tr class="field-even field"><th class="field-name">更新日:</th><td class="field-body">2019/02/05</td>
-</tr>
-</tbody>
-</table>
+<dl class="field-list simple">
+<dt class="field-odd">管理者</dt>
+<dd class="field-odd"><p>北神 雄太(Yuta Kitagami)</p>
+</dd>
+<dt class="field-even">連絡先</dt>
+<dd class="field-even"><p><a class="reference external" href="mailto:kitagami&#37;&#52;&#48;Artifactnoise&#46;com">kitagami<span>&#64;</span>Artifactnoise<span>&#46;</span>com</a></p>
+</dd>
+<dt class="field-odd">公開日</dt>
+<dd class="field-odd"><p>2019/02/05</p>
+</dd>
+<dt class="field-even">更新日</dt>
+<dd class="field-even"><p>2019/02/05</p>
+</dd>
+</dl>
 </div>
 </div>
 
@@ -263,7 +263,7 @@
 <ul class="nav navbar-nav pull-right hidden-xs hidden-sm">
       
         <li><a href="S02_1.html" title="第2章-1 EtherCATの動作について" >previous</a></li>
-        <li><a href="C02.html" title="コラム RaspberryPiで試す方法" >next</a></li>
+        <li><a href="C02.html" title="コラム RaspberryPiでEtherCATを動かそう！" >next</a></li>
         <li><a href="../genindex.html" title="General Index" >index</a></li>
         <li><a href="S01.html" >第1章   EtherCATとは</a></li>
         <li><a href="S02_1.html" >第2章-1     EtherCATの動作について</a></li>
@@ -277,7 +277,7 @@
       <!-- footer -->
       <footer role="contentinfo">
           &copy; Copyright 2019, Y.Kitagami.
-        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.8.5.
+        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 2.2.0.
       </footer>
       <!-- /footer -->
 
