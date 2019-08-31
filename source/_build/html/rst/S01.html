@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="jp">
+  <head>
+    <meta charset="utf-8" />
+    
+    <title>第1章 EtherCATとは &mdash; EtherCAT 開発日誌  documentation</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lily+Script+One" media="screen and (min-width:481px)" type="text/css" />
+
+<link rel="stylesheet" href="../_static/css/basicstrap-base.css" type="text/css" />
+<link rel="stylesheet" id="current-theme" href="../_static/css/bootstrap3/bootswatch-cosmo.css" type="text/css" />
+<link rel="stylesheet" id="current-adjust-theme" href="../_static/css/adjust_theme/bootswatch-cosmo.css" type="text/css" />
+
+<link rel="stylesheet" href="../_static/css/font-awesome.min.css">
+
+<style type="text/css">
+  body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+</style>
+
+<link rel="stylesheet" href="../_static/css/basicstrap.css" type="text/css" />
+<link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+<script type="text/javascript">
+  var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:    '../',
+            VERSION:     '',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE:  true
+  };
+</script>
+    <script type="text/javascript" src="../_static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/js/bootstrap3.min.js"></script>
+<script type="text/javascript" src="../_static/js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="../_static/js/basicstrap.js"></script>
+<script type="text/javascript">
+</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="EtherCAT 開発日誌  documentation" href="../index.html" />
+    <link rel="next" title="第2章-1 EtherCATの動作について" href="S02_1.html" />
+    <link rel="prev" title="EtherCATモジュール用LEDx16ボード" href="M02.html" /> 
+  </head>
+  <body role="document">
+    <div id="navbar-top" class="navbar navbar-fixed-top navbar-default" role="navigation" aria-label="top navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">EtherCAT 開発日誌  documentation</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown visible-xs">
+                <a role="button" id="localToc" data-toggle="dropdown" data-target="#" href="#">Table Of Contents <b class="caret"></b></a>
+                <ul class="dropdown-menu localtoc sp-localtoc" role="menu" aria-labelledby="localToc">
+                <ul>
+<li><a class="reference internal" href="#">第1章   EtherCATとは</a><ul>
+<li><a class="reference internal" href="#id1">購入サイト</a></li>
+<li><a class="reference internal" href="#id2">目次</a></li>
+<li><a class="reference internal" href="#id3">コラム</a></li>
+</ul>
+</li>
+</ul>
+
+                </ul>
+              </li>
+
+            
+              <li><a href="M02.html" title="EtherCATモジュール用LEDx16ボード" accesskey="P">previous </a></li>
+              <li><a href="S02_1.html" title="第2章-1 EtherCATの動作について" accesskey="N">next </a></li>
+              <li><a href="../genindex.html" title="General Index" accesskey="I">index </a></li>
+            
+            <li class="visible-xs"><a href="../_sources/rst/S01.rst.txt" rel="nofollow">Show Source</a></li>
+
+            <li class="visible-xs">
+                <form class="search form-search form-inline navbar-form navbar-right sp-searchbox" action="../search.html" method="get">
+                  <div class="input-append input-group">
+                    <input type="text" class="search-query form-control" name="q" placeholder="Search...">
+                    <span class="input-group-btn">
+                    <input type="submit" class="btn" value="Go" />
+                    </span>
+                  </div>
+                  <input type="hidden" name="check_keywords" value="yes" />
+                  <input type="hidden" name="area" value="default" />
+                </form>
+            </li>
+
+            
+
+          </ul>
+
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- container -->
+    <div class="container-fluid">
+
+      <!-- row -->
+      <div class="row">
+         
+<div class="col-md-3 hidden-xs" id="sidebar-wrapper">
+  <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">第1章   EtherCATとは</a><ul>
+<li><a class="reference internal" href="#id1">購入サイト</a></li>
+<li><a class="reference internal" href="#id2">目次</a></li>
+<li><a class="reference internal" href="#id3">コラム</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="M02.html"
+                        title="previous chapter">EtherCATモジュール用LEDx16ボード</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="S02_1.html"
+                        title="next chapter">第2章-1     EtherCATの動作について</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/rst/S01.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" role="search">
+  <h3>Quick search</h3>
+  <form class="search form-inline" action="../search.html" method="get">
+      <div class="input-append input-group">
+        <input type="text" class="search-query form-control" name="q" placeholder="Search...">
+        <span class="input-group-btn">
+        <input type="submit" class="btn" value="Go" />
+        </span>
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+  </div>
+</div> 
+        
+
+        <div class="col-md-9" id="content-wrapper">
+          <div class="document" role="main">
+            <div class="documentwrapper">
+              <div class="bodywrapper">
+                <div class="body">
+                  
+  <div class="section" id="ethercat">
+<h1>第1章   EtherCATとは<a class="headerlink" href="#ethercat" title="Permalink to this headline">¶</a></h1>
+<p>EtherCATを簡単に説明すると、民生用のPCで使用されている有線LANを使用し、特別な機械を付けづに産業機器を制御出来る仕組みです。
+また、他にも利点があり、EtherCATの特徴として「冗長性ある通信」、「高速伝送」、「同期動作」、「その他の通信規格をラップする仕組み」などがあります。
+それぞれの特徴については今後まとめていくとしますが、まずはEtherCATの始まりと歴史についてご説明いたします。</p>
+<p>EtherCATはドイツで誕生しました。ドイツの大手産業機器メーカ「ベッコフオートメーション」が最初に考案開発を行い、そこから規格化されていきました。
+EtherCATの設立は2003年で、すでにその時からオープンな規格として提案されました。</p>
+<p>EtherCATの規格団体「EtherCAT Technology Group」（略してETG）が管理を行い、情報の公開や会員限定の資料などを公開しております。
+会員には法人である必要があり、個人での申し込みはできません。（当方はLLP 有限責任事業組合として登記をしている為か申請ができました）
+また、製品を販売する際にベンダーIDが必要となりますが、その申請も会員になって行う必要があります。</p>
+<p>EtherCATの通信プロトコルはIEEEAに登録済みであり、パケットの仕組みに関しては会員にならなくても知り得ることができます。
+また、EtherCATを組み込んだり利用したりする際に特別な費用を払うといったこともなく、自由に利用することは可能です。</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../_images/top1.JPG"><img alt="../_images/top1.JPG" src="../_images/top1.JPG" style="width: 460.8px; height: 307.20000000000005px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="id1">
+<h2>購入サイト<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://artifactnoise.stores.jp/items/5c545082aee1bb192c4182eb">EtherCAT GPIO16ポート LAN9252使用評価ボード</a></p></li>
+<li><p><a class="reference external" href="https://artifactnoise.stores.jp/items/5c545193aee1bb37ea418289">EtherCATモジュール用LEDx16ボード</a></p></li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>目次<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://nonnoise.github.io/EtherCAT_Document/build/html/index.html">TOPページ</a></p>
+<div class="toctree-wrapper compound">
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">第1章   EtherCATとは</a></li>
+<li class="toctree-l1"><a class="reference internal" href="S02_1.html">第2章-1     EtherCATの動作について</a></li>
+</ul>
+</div>
+<ul class="simple">
+<li><p>第2章-2 EtherCATの通信について</p></li>
+<li><p>第3章   EtherCATのプロトコルについて</p></li>
+<li><p>第4章   EtherCATを動かしてみよう</p></li>
+<li><p>第5章   EtherCATライブラリについて</p></li>
+<li><p>第6章   EtherCATで自作ハードウェアを接続してみる</p></li>
+<li><p>第7章   EtherCAT-Pの規格について</p></li>
+<li><p>第8章   EtherCATの得意分野、不得意な分野</p></li>
+<li><p>第9章   EtherCAT応用事例集</p></li>
+</ul>
+<p>※以上の内容は常に変化と変更があります。書かない場合もあります。書籍化になる場合もあります。参考程度に。</p>
+</div>
+<div class="section" id="id3">
+<h2>コラム<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="C01.html">コラム　Linuxで試す方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="C02.html">コラム　RaspberryPiでEtherCATを動かそう！</a></li>
+</ul>
+</div>
+<ul class="simple">
+<li><p>Windowsで試す方法（調査中)</p></li>
+<li><p>MacOSで試す方法（調査中)</p></li>
+</ul>
+</div>
+</div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div><!-- /row -->
+
+      <!-- row -->
+      <div class="row footer-relbar">
+<div id="navbar-related" class=" related navbar navbar-default" role="navigation" aria-label="related navigation">
+  <div class="navbar-inner">
+    <ul class="nav navbar-nav ">
+        <li><a href="../index.html">EtherCAT 開発日誌  documentation</a></li>
+    </ul>
+<ul class="nav navbar-nav pull-right hidden-xs hidden-sm">
+      
+        <li><a href="M02.html" title="EtherCATモジュール用LEDx16ボード" >previous</a></li>
+        <li><a href="S02_1.html" title="第2章-1 EtherCATの動作について" >next</a></li>
+        <li><a href="../genindex.html" title="General Index" >index</a></li>
+        <li><a href="#">top</a></li> 
+      
+    </ul>
+  </div>
+</div>
+      </div><!-- /row -->
+
+      <!-- footer -->
+      <footer role="contentinfo">
+          &copy; Copyright 2019, Y.Kitagami.
+        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 2.2.0.
+      </footer>
+      <!-- /footer -->
+
+    </div>
+    <!-- /container -->
+
+  </body>
+</html>
