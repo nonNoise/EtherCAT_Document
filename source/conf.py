@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'EtherCAT 開発日誌'
+project = u'EtherCAT 開発記録'
 copyright = '2019, Y.Kitagami'
 author = 'Y.Kitagami'
 

@@ -66,7 +66,7 @@ https://www.ethercat.org/jp.htm
 
 - コラム  EtherCATを動かしてみよう
 
-同人誌にまとめました！
+★以上の内容を同人誌にまとめました！
 
 https://www.switch-science.com/catalog/5919/
 
