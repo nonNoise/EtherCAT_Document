@@ -60,21 +60,26 @@ https://www.ethercat.org/jp.htm
     rst/S01
     rst/S02_1
 
-- 第2章-2 EtherCATの通信について
+-  EtherCATの通信について
 
-- 第3章   EtherCATのプロトコルについて
+-  EtherCATのプロトコルについて
 
-- 第4章   EtherCATを動かしてみよう
+- コラム  EtherCATを動かしてみよう
 
-- 第5章   EtherCATライブラリについて
+同人誌にまとめました！
 
-- 第6章   EtherCATで自作ハードウェアを接続してみる
+https://www.switch-science.com/catalog/5919/
 
-- 第7章   EtherCAT-Pの規格について
 
-- 第8章   EtherCATの得意分野、不得意な分野
+-  EtherCATライブラリについて
 
-- 第9章   EtherCAT応用事例集
+-  EtherCATで自作ハードウェアを接続してみる
+
+-  EtherCAT-Pの規格について
+
+-  EtherCATの得意分野、不得意な分野
+
+-  EtherCAT応用事例集
 
 コラム
 ---------------------------------------------------
