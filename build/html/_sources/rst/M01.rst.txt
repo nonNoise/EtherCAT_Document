@@ -94,13 +94,18 @@ EtherCATは一般のPC(Linux)に付属する有線LANを使って通信を行い
 
 .. image:: ../img/p02.png
     :scale: 10%
-     :target: 
+    :target: https://github.com/nonNoise/EtherCAT_Document/blob/master/source/file/CAD/Schematic.pdf 
 
 外形図面
 --------------------------------------------------
 
+★ 寸法付きPDFファイル
 
+    https://github.com/nonNoise/EtherCAT_Document/blob/master/source/file/CAD/Outline.pdf
 
+★ DXFファイル (Eagleエクスポート)
+
+    https://github.com/nonNoise/EtherCAT_Document/blob/master/source/file/CAD/Outline.dxf
 
 |
 
