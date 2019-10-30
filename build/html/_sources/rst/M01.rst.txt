@@ -1,10 +1,10 @@
 =================================================================
-EtherCAT GPIO16ポート LAN9252使用評価ボード
+AN-201　EtherCATスレーブ評価基板　使い方
 =================================================================
 
-.. image:: ../img/be4211cc89ca84f60e51.jpeg
+.. image:: ../img/AN-201.jpg
     :scale: 90%
-    :target: https://artifactnoise.stores.jp/items/5c545082aee1bb192c4182eb
+    :target: https://www.switch-science.com/catalog/5917/
 
 
 概要
@@ -21,7 +21,7 @@ EtherCATの情報を記録するEEPROMもボードに搭載してあり、自由
 購入
 ---------------------------------------------------
 
-- `EtherCAT GPIO16ポート LAN9252使用評価ボード <https://artifactnoise.stores.jp/items/5c545082aee1bb192c4182eb>`_
+- `EtherCAT GPIO16ポート LAN9252使用評価ボード <https://www.switch-science.com/catalog/5917/>`_
 
 
 モジュール側のセットアップ
@@ -29,7 +29,7 @@ EtherCATの情報を記録するEEPROMもボードに搭載してあり、自由
 
 - EtherCATモジュールにLEDモジュールを接続する。
 
-- LEDモジュールはこちら `EtherCATモジュール用LEDx16ボード <https://artifactnoise.stores.jp/items/5c545193aee1bb37ea418289>`_
+- LEDモジュールはこちら `EtherCATモジュール用LEDx16ボード <https://www.switch-science.com/catalog/5918/>`_
 
 - LEDモジュールを使用しない場合は、ピンソケットに電源5Vを供給する。
 
@@ -62,6 +62,19 @@ EtherCATは一般のPC(Linux)に付属する有線LANを使って通信を行い
 - sudo python3 test.py
 
 これでモジュールが点滅したりします。
+
+
+※上手く行かない際のアドバイス
+
+    test.pyの
+
+    cat = EtherCAT_Init("eth0")    # EtherCATのネットワーク初期設定
+
+    にてNICカードを選択してます。LinuxPCで通信を行うNICの名前に変更して下さい。
+
+※その他、上手く行かない際は以下の問い合わせよりご連絡下さい。
+
+    info＠artifactnoise.com　（アットマークを半角にしてください）
 
 ピンアサイン
 --------------------------------------------------

@@ -1,17 +1,17 @@
 =================================================================
-EtherCATモジュール用LEDx16ボード
+AN-202　LED16モジュール　使い方
 =================================================================
 
-.. image:: ../img/04c102f3de033396ed53.jpeg
+.. image:: ../img/LEDx16.jpg
     :scale: 90%
-    :target: https://artifactnoise.stores.jp/items/5c545193aee1bb37ea418289
+    :target: https://www.switch-science.com/catalog/5918/
 
 概要
 ---------------------------------------------------
 
 手取り早くEtherCATにて通信テストを行う際のもっとも単純なEtherCAT Slaveモジュール用のLEDボードです。
 
-`EtherCAT GPIO16ポート LAN9252使用評価ボード <https://artifactnoise.stores.jp/items/5c545082aee1bb192c4182eb>`_ に接続して使います。
+`EtherCAT GPIO16ポート LAN9252使用評価ボード <https://www.switch-science.com/catalog/5917/>`_ に接続して使います。
 
 USB-MicroBを電源とし、GPIOx16を全てLEDに接続してあります。
 
@@ -22,7 +22,7 @@ USB-MicroBを電源とし、GPIOx16を全てLEDに接続してあります。
 購入
 ---------------------------------------------------
 
-- `EtherCATモジュール用LEDx16ボード <https://artifactnoise.stores.jp/items/5c545193aee1bb37ea418289>`_
+- `EtherCATモジュール用LEDx16ボード <https://www.switch-science.com/catalog/5918/>`_
 
 
 モジュール側のセットアップ
@@ -59,6 +59,10 @@ EtherCATは一般のPC(Linux)に付属する有線LANを使って通信を行い
 - sudo python3 test.py
 
 これでモジュールが点滅したりします。
+
+※その他、上手く行かない際は以下の問い合わせよりご連絡下さい。
+
+    info＠artifactnoise.com　（アットマークを半角にしてください）
 
 ピンアサイン
 --------------------------------------------------

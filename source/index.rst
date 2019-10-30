@@ -20,14 +20,36 @@ EtherCATについては公式の内容を参考にしてください。
 
 https://www.ethercat.org/jp.htm
 
-対象モジュール
+
+★NEW 同人誌が発売になりました！
 ---------------------------------------------------
 
-.. toctree::
-    :maxdepth: 1
+.. image:: ./img/C96.jpg
+   :scale: 20%
 
-    rst/M01
-    rst/M02
+**◎　電子書籍版(PDF)**
+
+    https://artifactnoise.stores.jp/items/5c29dcefc49cf353509aa4cc
+
+**◎　リアル冊子（フルカラー）**
+
+    https://www.switch-science.com/catalog/5919/
+
+
+★NEW モジュールが発売になりました！
+---------------------------------------------------
+
+.. image:: ./img/EtherCAT_LAN9252_TOP.jpg
+
+**◎　AN-201_EtherCATスレーブ評価基板LAN9252使用**
+
+    https://www.switch-science.com/catalog/5917/
+
+**◎　AN-202_LED16モジュール**
+
+    https://www.switch-science.com/catalog/5918/
+
+
 
 目次
 ---------------------------------------------------
@@ -54,14 +76,14 @@ https://www.ethercat.org/jp.htm
 
 - 第9章   EtherCAT応用事例集
 
-※以上の内容は常に変化と変更があります。書かない場合もあります。書籍化になる場合もあります。参考程度に。
-
 コラム
 ---------------------------------------------------
 
 .. toctree::
     :maxdepth: 1
 
+    rst/M01
+    rst/M02
     rst/C01
     rst/C02
 
@@ -69,12 +91,16 @@ https://www.ethercat.org/jp.htm
 
 - MacOSで試す方法（調査中)
 
+※以上の内容は常に変化と変更があります。書かない場合もあります。書籍化になる場合もあります。参考程度に。
+
+
+
 購入サイト
 ---------------------------------------------------
 
-- `EtherCAT GPIO16ポート LAN9252使用評価ボード <https://artifactnoise.stores.jp/items/5c545082aee1bb192c4182eb>`_
+- `EtherCAT GPIO16ポート LAN9252使用評価ボード <https://www.switch-science.com/catalog/5917/>`_
 
-- `EtherCATモジュール用LEDx16ボード <https://artifactnoise.stores.jp/items/5c545193aee1bb37ea418289>`_
+- `EtherCATモジュール用LEDx16ボード <https://www.switch-science.com/catalog/5917/>`_
 
 
 
@@ -106,6 +132,7 @@ ArtifactNoise,LLP
 :公開日: 2019/01/30 
 :更新　: 2019/02/05
 :更新　: 2019/05/13   モジュールの説明追加
+:更新　: 2019/10/30   スイッチサイエンスにて発売開始
 
 .. raw:: html
 

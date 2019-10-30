@@ -52,7 +52,7 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="top" title="EtherCAT 開発日誌  documentation" href="../index.html" />
     <link rel="up" title="第2章-1 EtherCATの動作について" href="S02_1.html" />
-    <link rel="prev" title="コラム Linuxで試す方法" href="C01.html" /> 
+    <link rel="prev" title="AN-202 LED16モジュール 使い方" href="M02.html" /> 
   </head>
   <body role="document">
     <div id="navbar-top" class="navbar navbar-fixed-top navbar-default" role="navigation" aria-label="top navigation">
@@ -70,7 +70,7 @@
           <ul class="nav navbar-nav navbar-right">
 
             
-              <li><a href="C01.html" title="コラム Linuxで試す方法" accesskey="P">previous </a></li>
+              <li><a href="M02.html" title="AN-202 LED16モジュール 使い方" accesskey="P">previous </a></li>
               <li><a href="../genindex.html" title="General Index" accesskey="I">index </a></li>
               <li><a href="S01.html" >第1章   EtherCATとは</a></li>
               <li><a href="S02_1.html" accesskey="U">第2章-1     EtherCATの動作について</a></li>
@@ -108,8 +108,8 @@
 <div class="col-md-3 hidden-xs" id="sidebar-wrapper">
   <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="C01.html"
-                        title="previous chapter">コラム　Linuxで試す方法</a></p>
+  <p class="topless"><a href="M02.html"
+                        title="previous chapter">AN-202　LED16モジュール　使い方</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -147,29 +147,31 @@
 <h1>コラム　RaspberryPiでEtherCATを動かそう！<a class="headerlink" href="#raspberrypiethercat" title="Permalink to this headline">¶</a></h1>
 <p>RaspberryPiはLinuxを搭載しており、手軽にネットワークの勉強を行う上で最適なOSであり、
 邪魔なセキュリティールール等はなく気軽に試すことができます。</p>
-<dl class="field-list simple">
-<dt class="field-odd">対応モデル</dt>
-<dd class="field-odd"><p>RaspberryPi 3B+, 3B, 2B</p>
-</dd>
-<dt class="field-even">対応OS</dt>
-<dd class="field-even"><p>Rasbian OS</p>
-</dd>
-</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">対応モデル:</th><td class="field-body">RaspberryPi 3B+, 3B, 2B</td>
+</tr>
+<tr class="field-even field"><th class="field-name">対応OS:</th><td class="field-body">Rasbian OS</td>
+</tr>
+</tbody>
+</table>
 <ul class="simple">
-<li><ol class="arabic simple">
-<li><p>ArtifactNoiseが作成したEtherCATモジュールを買います。</p></li>
+<li><ol class="first arabic">
+<li>ArtifactNoiseが作成したEtherCATモジュールを買います。</li>
 </ol>
 </li>
 </ul>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="M01.html">EtherCAT GPIO16ポート LAN9252使用評価ボード</a></li>
-<li class="toctree-l1"><a class="reference internal" href="M02.html">EtherCATモジュール用LEDx16ボード</a></li>
+<li class="toctree-l1"><a class="reference internal" href="M01.html">AN-201　EtherCATスレーブ評価基板　使い方</a></li>
+<li class="toctree-l1"><a class="reference internal" href="M02.html">AN-202　LED16モジュール　使い方</a></li>
 </ul>
 </div>
 <ul class="simple">
-<li><ol class="arabic simple" start="3">
-<li><p>RaspberryPiに電源を入れ、WiFiよりSSHアクセス、もしくはシリアルポート、デスクトップよりマウスでコンソールを立ち上げます。</p></li>
+<li><ol class="first arabic" start="3">
+<li>RaspberryPiに電源を入れ、WiFiよりSSHアクセス、もしくはシリアルポート、デスクトップよりマウスでコンソールを立ち上げます。</li>
 </ol>
 </li>
 </ul>
@@ -178,19 +180,19 @@
 <div class="line"><br /></div>
 </div>
 <ul class="simple">
-<li><ol class="arabic simple" start="4">
-<li><p>LEDボードをピンソケットへ接続し、USB端子にMicro-Bを接続します。</p></li>
+<li><ol class="first arabic" start="4">
+<li>LEDボードをピンソケットへ接続し、USB端子にMicro-Bを接続します。</li>
 </ol>
 </li>
 </ul>
 <p>USBは電源供給のみ行います。RaspberryPiの余っているUSBポートに接続します。</p>
-<a class="reference internal image-reference" href="../_images/DSC_3488.jpg"><img alt="../_images/DSC_3488.jpg" src="../_images/DSC_3488.jpg" style="width: 332.6px; height: 228.20000000000002px;" /></a>
+<a class="reference internal image-reference" href="../_images/DSC_3488.jpg"><img alt="../_images/DSC_3488.jpg" src="../_images/DSC_3488.jpg" style="width: 332.6px; height: 228.2px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <ul class="simple">
-<li><ol class="arabic simple" start="5">
-<li><p>Githubより、以下のリポジトリをダウンロードします。</p></li>
+<li><ol class="first arabic" start="5">
+<li>Githubより、以下のリポジトリをダウンロードします。</li>
 </ol>
 </li>
 </ul>
@@ -205,24 +207,24 @@
 <div class="line"><br /></div>
 </div>
 <ul>
-<li><ol class="arabic simple" start="6">
-<li><p>RaspberryPiにLANケーブルを接続し、EtherCATにもLANケーブルを接続する</p></li>
+<li><ol class="first arabic simple" start="6">
+<li>RaspberryPiにLANケーブルを接続し、EtherCATにもLANケーブルを接続する</li>
 </ol>
 <p>EtherCATでは、PortAがマスター側と規定されているため、PortA（写真では下側）のLANコネクタに接続します。</p>
-<a class="reference internal image-reference" href="../_images/DSC_3489.jpg"><img alt="../_images/DSC_3489.jpg" src="../_images/DSC_3489.jpg" style="width: 157.70000000000002px; height: 120.0px;" /></a>
+<a class="reference internal image-reference" href="../_images/DSC_3489.jpg"><img alt="../_images/DSC_3489.jpg" src="../_images/DSC_3489.jpg" style="width: 157.7px; height: 120.0px;" /></a>
 </li>
 </ul>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <ul>
-<li><ol class="arabic simple" start="7">
-<li><p>EtherCATボードのLINC-AのLEDが点滅することを確認します。</p></li>
+<li><ol class="first arabic simple" start="7">
+<li>EtherCATボードのLINC-AのLEDが点滅することを確認します。</li>
 </ol>
-<a class="reference internal image-reference" href="../_images/DSC_3489.jpg"><img alt="../_images/DSC_3489.jpg" src="../_images/DSC_3489.jpg" style="width: 157.70000000000002px; height: 120.0px;" /></a>
+<a class="reference internal image-reference" href="../_images/DSC_3489.jpg"><img alt="../_images/DSC_3489.jpg" src="../_images/DSC_3489.jpg" style="width: 157.7px; height: 120.0px;" /></a>
 </li>
-<li><ol class="arabic simple" start="8">
-<li><p>以下のコマンドを実行します。</p></li>
+<li><ol class="first arabic simple" start="8">
+<li>以下のコマンドを実行します。</li>
 </ol>
 </li>
 </ul>
@@ -231,8 +233,8 @@
 <div class="line"><br /></div>
 </div>
 <ul class="simple">
-<li><ol class="arabic simple" start="9">
-<li><p>無事にうまく通信ができれば、RUNが点灯し、16個のLEDが点灯すると思います。</p></li>
+<li><ol class="first arabic" start="9">
+<li>無事にうまく通信ができれば、RUNが点灯し、16個のLEDが点灯すると思います。</li>
 </ol>
 </li>
 </ul>
@@ -247,20 +249,20 @@
 <div class="line"><br /></div>
 </div>
 <p>■ 管理情報</p>
-<dl class="field-list simple">
-<dt class="field-odd">管理者</dt>
-<dd class="field-odd"><p>北神 雄太(Yuta Kitagami)</p>
-</dd>
-<dt class="field-even">連絡先</dt>
-<dd class="field-even"><p><a class="reference external" href="mailto:kitagami&#37;&#52;&#48;Artifactnoise&#46;com">kitagami<span>&#64;</span>Artifactnoise<span>&#46;</span>com</a></p>
-</dd>
-<dt class="field-odd">公開日</dt>
-<dd class="field-odd"><p>2019/02/05</p>
-</dd>
-<dt class="field-even">更新日</dt>
-<dd class="field-even"><p>2019/02/05</p>
-</dd>
-</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">管理者:</th><td class="field-body">北神 雄太(Yuta Kitagami)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">連絡先:</th><td class="field-body"><a class="reference external" href="mailto:kitagami&#37;&#52;&#48;Artifactnoise&#46;com">kitagami<span>&#64;</span>Artifactnoise<span>&#46;</span>com</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">公開日:</th><td class="field-body">2019/02/05</td>
+</tr>
+<tr class="field-even field"><th class="field-name">更新日:</th><td class="field-body">2019/02/05</td>
+</tr>
+</tbody>
+</table>
 </div>
 
 
@@ -282,7 +284,7 @@
     </ul>
 <ul class="nav navbar-nav pull-right hidden-xs hidden-sm">
       
-        <li><a href="C01.html" title="コラム Linuxで試す方法" >previous</a></li>
+        <li><a href="M02.html" title="AN-202 LED16モジュール 使い方" >previous</a></li>
         <li><a href="../genindex.html" title="General Index" >index</a></li>
         <li><a href="S01.html" >第1章   EtherCATとは</a></li>
         <li><a href="S02_1.html" >第2章-1     EtherCATの動作について</a></li>
@@ -296,7 +298,7 @@
       <!-- footer -->
       <footer role="contentinfo">
           &copy; Copyright 2019, Y.Kitagami.
-        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 2.2.0.
+        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.8.5.
       </footer>
       <!-- /footer -->
 
