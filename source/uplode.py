@@ -8,6 +8,8 @@ print ('Password: '+sys.argv[2])
 print ('Commit: '+sys.argv[3])
 
 command = "make html"
+command = ".\make.bat html"
+
 print(command)
 prc = pexpect.spawn(command)
 prc.expect( pexpect.EOF )

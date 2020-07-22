@@ -76,7 +76,7 @@
 <li><a class="reference internal" href="#">AN-201　EtherCATスレーブ評価基板　使い方</a><ul>
 <li><a class="reference internal" href="#id1">概要</a></li>
 <li><a class="reference internal" href="#id2">購入</a></li>
-<li><a class="reference internal" href="#id3">モジュール側のセットアップ</a></li>
+<li><a class="reference internal" href="#id3">セットアップ</a></li>
 <li><a class="reference internal" href="#pc">PC側のセットアップ</a></li>
 <li><a class="reference internal" href="#id4">ピンアサイン</a></li>
 <li><a class="reference internal" href="#id5">回路図</a></li>
@@ -133,7 +133,7 @@
 <li><a class="reference internal" href="#">AN-201　EtherCATスレーブ評価基板　使い方</a><ul>
 <li><a class="reference internal" href="#id1">概要</a></li>
 <li><a class="reference internal" href="#id2">購入</a></li>
-<li><a class="reference internal" href="#id3">モジュール側のセットアップ</a></li>
+<li><a class="reference internal" href="#id3">セットアップ</a></li>
 <li><a class="reference internal" href="#pc">PC側のセットアップ</a></li>
 <li><a class="reference internal" href="#id4">ピンアサイン</a></li>
 <li><a class="reference internal" href="#id5">回路図</a></li>
@@ -193,16 +193,16 @@
 <div class="section" id="id2">
 <h2>購入<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><a class="reference external" href="https://www.switch-science.com/catalog/5917/">EtherCAT GPIO16ポート LAN9252使用評価ボード</a></li>
+<li><p><a class="reference external" href="https://www.switch-science.com/catalog/5917/">EtherCAT GPIO16ポート LAN9252使用評価ボード</a></p></li>
 </ul>
 </div>
 <div class="section" id="id3">
-<h2>モジュール側のセットアップ<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<h2>セットアップ<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>EtherCATモジュールにLEDモジュールを接続する。</li>
-<li>LEDモジュールはこちら <a class="reference external" href="https://www.switch-science.com/catalog/5918/">EtherCATモジュール用LEDx16ボード</a></li>
-<li>LEDモジュールを使用しない場合は、ピンソケットに電源5Vを供給する。</li>
-<li>POWERのLEDが点灯する事を確認</li>
+<li><p>EtherCATモジュールにLEDモジュールを接続する。</p></li>
+<li><p>LEDモジュールはこちら <a class="reference external" href="https://www.switch-science.com/catalog/5918/">EtherCATモジュール用LEDx16ボード</a></p></li>
+<li><p>LEDモジュールを使用しない場合は、ピンソケットに電源5Vを供給する。</p></li>
+<li><p>POWERのLEDが点灯する事を確認</p></li>
 </ul>
 </div>
 <div class="section" id="pc">
@@ -210,17 +210,17 @@
 <p>EtherCATは一般のPC(Linux)に付属する有線LANを使って通信を行います。</p>
 <p>物理的なセットアップは、</p>
 <ul class="simple">
-<li>PC(Linux)の有線LANポートにLANケーブルを接続する。</li>
-<li>その有線LANを直接 EtherCATのAポートに接続する。</li>
-<li>EtherCATのアクセスランプの点滅を確認する。</li>
-<li>Linux側では有線LANが接続されたが、インターネットへは未接続といったアラートが出る。（問題ない）</li>
+<li><p>PC(Linux)の有線LANポートにLANケーブルを接続する。</p></li>
+<li><p>その有線LANを直接 EtherCATのAポートに接続する。</p></li>
+<li><p>EtherCATのアクセスランプの点滅を確認する。</p></li>
+<li><p>Linux側では有線LANが接続されたが、インターネットへは未接続といったアラートが出る。（問題ない）</p></li>
 </ul>
 <p>続いて、ソフトウェアの準備です。</p>
 <ul class="simple">
-<li>コンソールを開く</li>
-<li>git clone <a class="reference external" href="https://github.com/nonNoise/EtherCAT_Master.git">https://github.com/nonNoise/EtherCAT_Master.git</a></li>
-<li>cd ./EtherCAT_Master</li>
-<li>sudo python3 test.py</li>
+<li><p>コンソールを開く</p></li>
+<li><p>git clone <a class="reference external" href="https://github.com/nonNoise/EtherCAT_Master.git">https://github.com/nonNoise/EtherCAT_Master.git</a></p></li>
+<li><p>cd ./EtherCAT_Master</p></li>
+<li><p>sudo python3 test.py</p></li>
 </ul>
 <p>これでモジュールが点滅したりします。</p>
 <p>※上手く行かない際のアドバイス</p>
@@ -229,42 +229,174 @@
 <p>cat = EtherCAT_Init(&quot;eth0&quot;)    # EtherCATのネットワーク初期設定</p>
 <p>にてNICカードを選択してます。LinuxPCで通信を行うNICの名前に変更して下さい。</p>
 </div></blockquote>
+<p>※　Windows,Macでは動きません（なぜですか？）</p>
+<p>Windows,Macでは、Socet通信に制限がかかっています。特に、EtherCATの宛先不明のパケットは受信する際にドライバで弾く用になっています。
+その為、公式のソフトやその他の仕組みは「パケットキャプチャ」等で使用する特殊ドライバを経由し、パケットを読み取るように行っています。
+現在、その方法に対して当方の開発が間に合っておらず、純粋にパケットを受信するLinuxを使って開発を行っております。
+WindowsやMacOSにてご要望がある際は、以下のアドレスもしくはTwitter(&#64;nonNoise)までご意見いただければ頑張りたいと思います。</p>
 <p>※その他、上手く行かない際は以下の問い合わせよりご連絡下さい。</p>
 <blockquote>
-<div>info＠artifactnoise.com　（アットマークを半角にしてください）</div></blockquote>
+<div><p>info＠artifactnoise.com　（アットマークを半角にしてください）</p>
+</div></blockquote>
 </div>
 <div class="section" id="id4">
 <h2>ピンアサイン<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">ボード電源:</th><td class="field-body">5V</td>
-</tr>
-<tr class="field-even field"><th class="field-name">IC駆動電圧:</th><td class="field-body">3.3V</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">EEPROM:</th><td class="field-body">24FC512</td>
-</tr>
-<tr class="field-even field"><th class="field-name">I/O電圧:</th><td class="field-body">3.3V</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">EtherNetケーブル:</th><td class="field-body">Cat5以上</td>
-</tr>
-</tbody>
-</table>
-<a class="reference internal image-reference" href="../_images/pin_assin.png"><img alt="../_images/pin_assin.png" src="../_images/pin_assin.png" style="width: 775.8px; height: 449.2px;" /></a>
+<dl class="field-list simple">
+<dt class="field-odd">ボード電源</dt>
+<dd class="field-odd"><p>5V</p>
+</dd>
+<dt class="field-even">IC駆動電圧</dt>
+<dd class="field-even"><p>3.3V</p>
+</dd>
+<dt class="field-odd">EEPROM</dt>
+<dd class="field-odd"><p>24FC512</p>
+</dd>
+<dt class="field-even">I/O電圧</dt>
+<dd class="field-even"><p>3.3V</p>
+</dd>
+<dt class="field-odd">EtherNetケーブル</dt>
+<dd class="field-odd"><p>Cat5以上</p>
+</dd>
+</dl>
+<a class="reference internal image-reference" href="../_images/pin_assin.png"><img alt="../_images/pin_assin.png" src="../_images/pin_assin.png" style="width: 172.0px; height: 122.60000000000001px;" /></a>
+<p>★　20ピンソケット</p>
+<dl class="field-list simple">
+<dt class="field-odd">GND</dt>
+<dd class="field-odd"><p>GND</p>
+</dd>
+<dt class="field-even">+5V</dt>
+<dd class="field-even"><p>電源供給用</p>
+</dd>
+<dt class="field-odd">3V3</dt>
+<dd class="field-odd"><p>レギュレータ(最大800mA)より出力</p>
+</dd>
+<dt class="field-even">I/O 00</dt>
+<dd class="field-even"><p>入力および出力端子（使用するにはEEPROMに入出力設定を書き込む必要があります）</p>
+</dd>
+<dt class="field-odd">I/O 01</dt>
+<dd class="field-odd"><p>入力および出力端子（使用するにはEEPROMに入出力設定を書き込む必要があります）</p>
+</dd>
+<dt class="field-even">I/O 02</dt>
+<dd class="field-even"><p>入力および出力端子（使用するにはEEPROMに入出力設定を書き込む必要があります）</p>
+</dd>
+<dt class="field-odd">I/O 03</dt>
+<dd class="field-odd"><p>入力および出力端子（使用するにはEEPROMに入出力設定を書き込む必要があります）</p>
+</dd>
+<dt class="field-even">I/O 04</dt>
+<dd class="field-even"><p>入力および出力端子（使用するにはEEPROMに入出力設定を書き込む必要があります）</p>
+</dd>
+<dt class="field-odd">I/O 05</dt>
+<dd class="field-odd"><p>入力および出力端子（使用するにはEEPROMに入出力設定を書き込む必要があります）</p>
+</dd>
+<dt class="field-even">I/O 06</dt>
+<dd class="field-even"><p>入力および出力端子（使用するにはEEPROMに入出力設定を書き込む必要があります）</p>
+</dd>
+<dt class="field-odd">I/O 07</dt>
+<dd class="field-odd"><p>入力および出力端子（使用するにはEEPROMに入出力設定を書き込む必要があります）</p>
+</dd>
+<dt class="field-even">I/O 08</dt>
+<dd class="field-even"><p>入力および出力端子（使用するにはEEPROMに入出力設定を書き込む必要があります）</p>
+</dd>
+<dt class="field-odd">I/O 09</dt>
+<dd class="field-odd"><p>入力および出力端子（使用するにはEEPROMに入出力設定を書き込む必要があります）</p>
+</dd>
+<dt class="field-even">I/O 10</dt>
+<dd class="field-even"><p>入力および出力端子（使用するにはEEPROMに入出力設定を書き込む必要があります）</p>
+</dd>
+<dt class="field-odd">I/O 11</dt>
+<dd class="field-odd"><p>入力および出力端子（使用するにはEEPROMに入出力設定を書き込む必要があります）</p>
+</dd>
+<dt class="field-even">I/O 12</dt>
+<dd class="field-even"><p>入力および出力端子（使用するにはEEPROMに入出力設定を書き込む必要があります）</p>
+</dd>
+<dt class="field-odd">I/O 13</dt>
+<dd class="field-odd"><p>入力および出力端子（使用するにはEEPROMに入出力設定を書き込む必要があります）</p>
+</dd>
+<dt class="field-even">I/O 14</dt>
+<dd class="field-even"><p>入力および出力端子（使用するにはEEPROMに入出力設定を書き込む必要があります）</p>
+</dd>
+<dt class="field-odd">I/O 15</dt>
+<dd class="field-odd"><p>入力および出力端子（使用するにはEEPROMに入出力設定を書き込む必要があります）</p>
+</dd>
+<dt class="field-even">GND</dt>
+<dd class="field-even"><p>GND</p>
+</dd>
+</dl>
+<p>★　12ピンソケット</p>
+<dl class="field-list simple">
+<dt class="field-odd">GND</dt>
+<dd class="field-odd"><p>GND</p>
+</dd>
+<dt class="field-even">+5V</dt>
+<dd class="field-even"><p>電源供給用</p>
+</dd>
+<dt class="field-odd">3V3</dt>
+<dd class="field-odd"><p>レギュレータ(最大800mA)より出力</p>
+</dd>
+<dt class="field-even">SIO3</dt>
+<dd class="field-even"><p>(QSPIで使用)</p>
+</dd>
+<dt class="field-odd">SIO2</dt>
+<dd class="field-odd"><p>(QSPIで使用)</p>
+</dd>
+<dt class="field-even">SIO1</dt>
+<dd class="field-even"><p>SPIでは、MISO (QSPIで使用)</p>
+</dd>
+<dt class="field-odd">SIO0</dt>
+<dd class="field-odd"><p>SPIでは、MOSI (QSPIで使用)</p>
+</dd>
+<dt class="field-even">SCK</dt>
+<dd class="field-even"><p>SCK (SPIもしくはQSPIで使用)</p>
+</dd>
+<dt class="field-odd">#SCS</dt>
+<dd class="field-odd"><p>#EN (SPIもしくはQSPIで使用)</p>
+</dd>
+<dt class="field-even">IRQ</dt>
+<dd class="field-even"><p>割り込み要求信号（出力）</p>
+</dd>
+<dt class="field-odd">SYNC0</dt>
+<dd class="field-odd"><p>分散クロック出力端子</p>
+</dd>
+<dt class="field-even">SYNC1</dt>
+<dd class="field-even"><p>分散クロック出力端子</p>
+</dd>
+</dl>
+<p>★　SPI通信を行う際の配線</p>
+<dl class="field-list simple">
+<dt class="field-odd">GND</dt>
+<dd class="field-odd"><p>GND</p>
+</dd>
+<dt class="field-even">+5V</dt>
+<dd class="field-even"><p>電源供給用</p>
+</dd>
+<dt class="field-odd">SIO1</dt>
+<dd class="field-odd"><p>SPIでは、MISO (QSPIで使用)</p>
+</dd>
+<dt class="field-even">SIO0</dt>
+<dd class="field-even"><p>SPIでは、MOSI (QSPIで使用)</p>
+</dd>
+<dt class="field-odd">SCK</dt>
+<dd class="field-odd"><p>SCK (SPIもしくはQSPIで使用)</p>
+</dd>
+<dt class="field-even">#SCS</dt>
+<dd class="field-even"><p>#EN (SPIもしくはQSPIで使用)</p>
+</dd>
+</dl>
 </div>
 <div class="section" id="id5">
 <h2>回路図<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<a class="reference external image-reference" href="https://github.com/nonNoise/EtherCAT_Document/blob/master/source/file/CAD/Schematic.pdf"><img alt="../_images/p02.png" src="../_images/p02.png" style="width: 701.7px; height: 495.9px;" /></a>
+<a class="reference external image-reference" href="https://github.com/nonNoise/EtherCAT_Document/blob/master/source/file/CAD/Schematic.pdf"><img alt="../_images/p02.png" src="../_images/p02.png" style="width: 701.7px; height: 495.90000000000003px;" /></a>
 </div>
 <div class="section" id="id6">
 <h2>外形図面<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <p>★ 寸法付きPDFファイル</p>
 <blockquote>
-<div><a class="reference external" href="https://github.com/nonNoise/EtherCAT_Document/raw/master/source/file/CAD/Outline.pdf">https://github.com/nonNoise/EtherCAT_Document/raw/master/source/file/CAD/Outline.pdf</a></div></blockquote>
+<div><p><a class="reference external" href="https://github.com/nonNoise/EtherCAT_Document/raw/master/source/file/CAD/Outline.pdf">https://github.com/nonNoise/EtherCAT_Document/raw/master/source/file/CAD/Outline.pdf</a></p>
+</div></blockquote>
 <p>★ DXFファイル (Eagleエクスポート)</p>
 <blockquote>
-<div><a class="reference external" href="https://raw.githubusercontent.com/nonNoise/EtherCAT_Document/master/source/file/CAD/Outline.dxf">https://raw.githubusercontent.com/nonNoise/EtherCAT_Document/master/source/file/CAD/Outline.dxf</a></div></blockquote>
+<div><p><a class="reference external" href="https://raw.githubusercontent.com/nonNoise/EtherCAT_Document/master/source/file/CAD/Outline.dxf">https://raw.githubusercontent.com/nonNoise/EtherCAT_Document/master/source/file/CAD/Outline.dxf</a></p>
+</div></blockquote>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -281,20 +413,20 @@
 <div class="line"><br /></div>
 </div>
 <p>■ 管理情報</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">管理者:</th><td class="field-body">北神 雄太(Yuta Kitagami)</td>
-</tr>
-<tr class="field-even field"><th class="field-name">連絡先:</th><td class="field-body"><a class="reference external" href="mailto:kitagami&#37;&#52;&#48;Artifactnoise&#46;com">kitagami<span>&#64;</span>Artifactnoise<span>&#46;</span>com</a></td>
-</tr>
-<tr class="field-odd field"><th class="field-name">公開日:</th><td class="field-body">2019/02/05</td>
-</tr>
-<tr class="field-even field"><th class="field-name">更新日:</th><td class="field-body">2019/02/05</td>
-</tr>
-</tbody>
-</table>
+<dl class="field-list simple">
+<dt class="field-odd">管理者</dt>
+<dd class="field-odd"><p>北神 雄太(Yuta Kitagami)</p>
+</dd>
+<dt class="field-even">連絡先</dt>
+<dd class="field-even"><p><a class="reference external" href="mailto:kitagami&#37;&#52;&#48;Artifactnoise&#46;com">kitagami<span>&#64;</span>Artifactnoise<span>&#46;</span>com</a></p>
+</dd>
+<dt class="field-odd">公開日</dt>
+<dd class="field-odd"><p>2019/02/05</p>
+</dd>
+<dt class="field-even">更新日</dt>
+<dd class="field-even"><p>2019/02/05</p>
+</dd>
+</dl>
 </div>
 </div>
 
@@ -333,7 +465,7 @@
       <!-- footer -->
       <footer role="contentinfo">
           &copy; Copyright 2019, Y.Kitagami.
-        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.8.5.
+        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 3.0.4.
       </footer>
       <!-- /footer -->
 
