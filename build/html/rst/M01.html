@@ -74,13 +74,13 @@
                 <ul class="dropdown-menu localtoc sp-localtoc" role="menu" aria-labelledby="localToc">
                 <ul>
 <li><a class="reference internal" href="#">AN-201　EtherCATスレーブ評価基板　使い方</a><ul>
-<li><a class="reference internal" href="#id1">概要</a></li>
-<li><a class="reference internal" href="#id2">購入</a></li>
-<li><a class="reference internal" href="#id3">セットアップ</a></li>
-<li><a class="reference internal" href="#pc">PC側のセットアップ</a></li>
-<li><a class="reference internal" href="#id4">ピンアサイン</a></li>
-<li><a class="reference internal" href="#id5">回路図</a></li>
-<li><a class="reference internal" href="#id6">外形図面</a></li>
+<li><a class="reference internal" href="#id1">■　概要</a></li>
+<li><a class="reference internal" href="#id2">■　購入</a></li>
+<li><a class="reference internal" href="#id3">■　セットアップ</a></li>
+<li><a class="reference internal" href="#pc">■　PC側のセットアップ</a></li>
+<li><a class="reference internal" href="#id4">■　ピンアサイン</a></li>
+<li><a class="reference internal" href="#id5">■　回路図</a></li>
+<li><a class="reference internal" href="#id6">■　外形図面</a></li>
 </ul>
 </li>
 </ul>
@@ -131,13 +131,13 @@
   <h3><a href="../index.html">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">AN-201　EtherCATスレーブ評価基板　使い方</a><ul>
-<li><a class="reference internal" href="#id1">概要</a></li>
-<li><a class="reference internal" href="#id2">購入</a></li>
-<li><a class="reference internal" href="#id3">セットアップ</a></li>
-<li><a class="reference internal" href="#pc">PC側のセットアップ</a></li>
-<li><a class="reference internal" href="#id4">ピンアサイン</a></li>
-<li><a class="reference internal" href="#id5">回路図</a></li>
-<li><a class="reference internal" href="#id6">外形図面</a></li>
+<li><a class="reference internal" href="#id1">■　概要</a></li>
+<li><a class="reference internal" href="#id2">■　購入</a></li>
+<li><a class="reference internal" href="#id3">■　セットアップ</a></li>
+<li><a class="reference internal" href="#pc">■　PC側のセットアップ</a></li>
+<li><a class="reference internal" href="#id4">■　ピンアサイン</a></li>
+<li><a class="reference internal" href="#id5">■　回路図</a></li>
+<li><a class="reference internal" href="#id6">■　外形図面</a></li>
 </ul>
 </li>
 </ul>
@@ -185,19 +185,19 @@
 <h1>AN-201　EtherCATスレーブ評価基板　使い方<a class="headerlink" href="#an-201-ethercat" title="Permalink to this headline">¶</a></h1>
 <a class="reference external image-reference" href="https://www.switch-science.com/catalog/5917/"><img alt="../_images/AN-201.jpg" src="../_images/AN-201.jpg" style="width: 414.0px; height: 414.0px;" /></a>
 <div class="section" id="id1">
-<h2>概要<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2>■　概要<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>手取り早くEtherCATにて通信テストを行う際のもっとも単純なEtherCAT Slaveモジュールです。</p>
 <p>マイコン不要でEtherCATの通信でGPIOx16(3.3V)を制御することが出来ます。</p>
 <p>EtherCATの情報を記録するEEPROMもボードに搭載してあり、自由に変更も可能です。</p>
 </div>
 <div class="section" id="id2">
-<h2>購入<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2>■　購入<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.switch-science.com/catalog/5917/">EtherCAT GPIO16ポート LAN9252使用評価ボード</a></p></li>
 </ul>
 </div>
 <div class="section" id="id3">
-<h2>セットアップ<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<h2>■　セットアップ<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>EtherCATモジュールにLEDモジュールを接続する。</p></li>
 <li><p>LEDモジュールはこちら <a class="reference external" href="https://www.switch-science.com/catalog/5918/">EtherCATモジュール用LEDx16ボード</a></p></li>
@@ -206,7 +206,7 @@
 </ul>
 </div>
 <div class="section" id="pc">
-<h2>PC側のセットアップ<a class="headerlink" href="#pc" title="Permalink to this headline">¶</a></h2>
+<h2>■　PC側のセットアップ<a class="headerlink" href="#pc" title="Permalink to this headline">¶</a></h2>
 <p>EtherCATは一般のPC(Linux)に付属する有線LANを使って通信を行います。</p>
 <p>物理的なセットアップは、</p>
 <ul class="simple">
@@ -224,23 +224,19 @@
 </ul>
 <p>これでモジュールが点滅したりします。</p>
 <p>※上手く行かない際のアドバイス</p>
-<blockquote>
-<div><p>test.pyの</p>
-<p>cat = EtherCAT_Init(&quot;eth0&quot;)    # EtherCATのネットワーク初期設定</p>
-<p>にてNICカードを選択してます。LinuxPCで通信を行うNICの名前に変更して下さい。</p>
-</div></blockquote>
+<p>test.pyの
+cat = EtherCAT_Init(&quot;eth0&quot;)    # EtherCATのネットワーク初期設定
+にてNICカードを選択してます。LinuxPCで通信を行うNICの名前に変更して下さい。</p>
 <p>※　Windows,Macでは動きません（なぜですか？）</p>
 <p>Windows,Macでは、Socet通信に制限がかかっています。特に、EtherCATの宛先不明のパケットは受信する際にドライバで弾く用になっています。
 その為、公式のソフトやその他の仕組みは「パケットキャプチャ」等で使用する特殊ドライバを経由し、パケットを読み取るように行っています。
 現在、その方法に対して当方の開発が間に合っておらず、純粋にパケットを受信するLinuxを使って開発を行っております。
 WindowsやMacOSにてご要望がある際は、以下のアドレスもしくはTwitter(&#64;nonNoise)までご意見いただければ頑張りたいと思います。</p>
 <p>※その他、上手く行かない際は以下の問い合わせよりご連絡下さい。</p>
-<blockquote>
-<div><p>info＠artifactnoise.com　（アットマークを半角にしてください）</p>
-</div></blockquote>
+<p>info＠artifactnoise.com　（アットマークを半角にしてください）</p>
 </div>
 <div class="section" id="id4">
-<h2>ピンアサイン<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<h2>■　ピンアサイン<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <dl class="field-list simple">
 <dt class="field-odd">ボード電源</dt>
 <dd class="field-odd"><p>5V</p>
@@ -258,7 +254,7 @@ WindowsやMacOSにてご要望がある際は、以下のアドレスもしく�
 <dd class="field-odd"><p>Cat5以上</p>
 </dd>
 </dl>
-<a class="reference internal image-reference" href="../_images/pin_assin.png"><img alt="../_images/pin_assin.png" src="../_images/pin_assin.png" style="width: 172.0px; height: 122.60000000000001px;" /></a>
+<a class="reference internal image-reference" href="../_images/pin_assin.png"><img alt="../_images/pin_assin.png" src="../_images/pin_assin.png" style="width: 688.0px; height: 490.40000000000003px;" /></a>
 <p>★　20ピンソケット</p>
 <dl class="field-list simple">
 <dt class="field-odd">GND</dt>
@@ -384,11 +380,11 @@ WindowsやMacOSにてご要望がある際は、以下のアドレスもしく�
 </dl>
 </div>
 <div class="section" id="id5">
-<h2>回路図<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<h2>■　回路図<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <a class="reference external image-reference" href="https://github.com/nonNoise/EtherCAT_Document/blob/master/source/file/CAD/Schematic.pdf"><img alt="../_images/p02.png" src="../_images/p02.png" style="width: 701.7px; height: 495.90000000000003px;" /></a>
 </div>
 <div class="section" id="id6">
-<h2>外形図面<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<h2>■　外形図面<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <p>★ 寸法付きPDFファイル</p>
 <blockquote>
 <div><p><a class="reference external" href="https://github.com/nonNoise/EtherCAT_Document/raw/master/source/file/CAD/Outline.pdf">https://github.com/nonNoise/EtherCAT_Document/raw/master/source/file/CAD/Outline.pdf</a></p>
