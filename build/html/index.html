@@ -6,7 +6,8 @@
 <html lang="jp">
   <head>
     <meta charset="utf-8" />
-    
+    <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>EtherCAT 開発記録 &mdash; EtherCAT 開発記録  documentation</title>
     <meta name="description" content="">
     <meta name="author" content="">
@@ -29,6 +30,8 @@
 
 <link rel="stylesheet" href="_static/css/basicstrap.css" type="text/css" />
 <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+<link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+<link rel="stylesheet" href="_static/css/basicstrap.css" type="text/css" />
     
 <script type="text/javascript">
   var DOCUMENTATION_OPTIONS = {
@@ -39,10 +42,10 @@
             HAS_SOURCE:  true
   };
 </script>
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/js/jquery.min.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/language_data.js"></script>
     <script type="text/javascript" src="_static/js/bootstrap3.min.js"></script>
 <script type="text/javascript" src="_static/js/jquery.cookie.min.js"></script>
 <script type="text/javascript" src="_static/js/basicstrap.js"></script>
@@ -178,10 +181,10 @@
               <div class="bodywrapper">
                 <div class="body">
                   
-  <div class="section" id="ethercat">
+  <section id="ethercat">
 <h1>EtherCAT 開発記録<a class="headerlink" href="#ethercat" title="Permalink to this headline">¶</a></h1>
 <a class="reference internal image-reference" href="_images/top.JPG"><img alt="_images/top.JPG" src="_images/top.JPG" style="width: 345.59999999999997px; height: 230.39999999999998px;" /></a>
-<div class="section" id="id1">
+<section id="id1">
 <h2>はじめに<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>このサイトは、産業用通信規格であるEtherCATの開発を行う際にメモした内容です。</p>
 <p>EtherCATは、数ある産業用通信規格の中の一つで、民生用のPCで使用されている有線LANを使用し、
@@ -189,8 +192,8 @@
 「冗長性ある通信」「高速伝送」「同期動作」「その他の通信規格をラップする仕組み」などがあります。</p>
 <p>EtherCATについては公式の内容を参考にしてください。</p>
 <p><a class="reference external" href="https://www.ethercat.org/jp.htm">https://www.ethercat.org/jp.htm</a></p>
-</div>
-<div class="section" id="new">
+</section>
+<section id="new">
 <h2>★NEW 同人誌が発売になりました！<a class="headerlink" href="#new" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="_images/C96.jpg"><img alt="_images/C96.jpg" src="_images/C96.jpg" style="width: 400.0px; height: 400.0px;" /></a>
 <p><strong>◎　電子書籍版(PDF)</strong></p>
@@ -201,8 +204,8 @@
 <blockquote>
 <div><p><a class="reference external" href="https://www.switch-science.com/catalog/5919/">https://www.switch-science.com/catalog/5919/</a></p>
 </div></blockquote>
-</div>
-<div class="section" id="id2">
+</section>
+<section id="id2">
 <h2>★NEW モジュールが発売になりました！<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <img alt="_images/EtherCAT_LAN9252_TOP.jpg" src="_images/EtherCAT_LAN9252_TOP.jpg" />
 <p><strong>◎　AN-201_EtherCATスレーブ評価基板LAN9252使用</strong></p>
@@ -213,8 +216,8 @@
 <blockquote>
 <div><p><a class="reference external" href="https://www.switch-science.com/catalog/5918/">https://www.switch-science.com/catalog/5918/</a></p>
 </div></blockquote>
-</div>
-<div class="section" id="id3">
+</section>
+<section id="id3">
 <h2>目次<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
@@ -237,8 +240,8 @@
 <li><p>EtherCATの得意分野、不得意な分野</p></li>
 <li><p>EtherCAT応用事例集</p></li>
 </ul>
-</div>
-<div class="section" id="id4">
+</section>
+<section id="id4">
 <h2>コラム<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
@@ -253,15 +256,15 @@
 <li><p>MacOSで試す方法（調査中)</p></li>
 </ul>
 <p>※以上の内容は常に変化と変更があります。書かない場合もあります。書籍化になる場合もあります。参考程度に。</p>
-</div>
-<div class="section" id="id5">
+</section>
+<section id="id5">
 <h2>購入サイト<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.switch-science.com/catalog/5917/">EtherCAT GPIO16ポート LAN9252使用評価ボード</a></p></li>
 <li><p><a class="reference external" href="https://www.switch-science.com/catalog/5917/">EtherCATモジュール用LEDx16ボード</a></p></li>
 </ul>
-</div>
-<div class="section" id="id6">
+</section>
+<section id="id6">
 <h2>著者について<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <p>本開発日誌は、ArtifactNoise,LLPに所属する北神が書いております。</p>
 <p>ArtifactNoise,LLPは、EtherCATのメンバーとして登録されてます。</p>
@@ -269,7 +272,7 @@
 <p>また、ベンダーIDも取得し、製品の開発についても前向きに検討しております。</p>
 <p>ArtifactNoise,LLP</p>
 <a class="reference external image-reference" href="http://artifactnoise.com"><img alt="ArtifactNoise" src="_images/logo-mini-320-132.png" style="width: 256.0px; height: 105.60000000000001px;" /></a>
-<div class="section" id="id7">
+<section id="id7">
 <h3>管理情報<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
 <dl class="field-list simple">
 <dt class="field-odd">管理者</dt>
@@ -299,9 +302,9 @@ window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'UA-24204483-5');
-</script></div>
-</div>
-</div>
+</script></section>
+</section>
+</section>
 
 
                 </div>
@@ -334,7 +337,7 @@ gtag('config', 'UA-24204483-5');
       <!-- footer -->
       <footer role="contentinfo">
           &copy; Copyright 2019, Y.Kitagami.
-        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 3.0.4.
+        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 4.0.1.
       </footer>
       <!-- /footer -->
 

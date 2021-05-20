@@ -6,7 +6,8 @@
 <html lang="jp">
   <head>
     <meta charset="utf-8" />
-    
+    <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>AN-201 EtherCATスレーブ評価基板 使い方 &mdash; EtherCAT 開発記録  documentation</title>
     <meta name="description" content="">
     <meta name="author" content="">
@@ -29,6 +30,8 @@
 
 <link rel="stylesheet" href="../_static/css/basicstrap.css" type="text/css" />
 <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+<link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/basicstrap.css" type="text/css" />
     
 <script type="text/javascript">
   var DOCUMENTATION_OPTIONS = {
@@ -39,10 +42,10 @@
             HAS_SOURCE:  true
   };
 </script>
+    <script type="text/javascript" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/js/jquery.min.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/js/bootstrap3.min.js"></script>
 <script type="text/javascript" src="../_static/js/jquery.cookie.min.js"></script>
 <script type="text/javascript" src="../_static/js/basicstrap.js"></script>
@@ -181,22 +184,22 @@
               <div class="bodywrapper">
                 <div class="body">
                   
-  <div class="section" id="an-201-ethercat">
+  <section id="an-201-ethercat">
 <h1>AN-201　EtherCATスレーブ評価基板　使い方<a class="headerlink" href="#an-201-ethercat" title="Permalink to this headline">¶</a></h1>
 <a class="reference external image-reference" href="https://www.switch-science.com/catalog/5917/"><img alt="../_images/AN-201.jpg" src="../_images/AN-201.jpg" style="width: 414.0px; height: 414.0px;" /></a>
-<div class="section" id="id1">
+<section id="id1">
 <h2>■　概要<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>手取り早くEtherCATにて通信テストを行う際のもっとも単純なEtherCAT Slaveモジュールです。</p>
 <p>マイコン不要でEtherCATの通信でGPIOx16(3.3V)を制御することが出来ます。</p>
 <p>EtherCATの情報を記録するEEPROMもボードに搭載してあり、自由に変更も可能です。</p>
-</div>
-<div class="section" id="id2">
+</section>
+<section id="id2">
 <h2>■　購入<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.switch-science.com/catalog/5917/">EtherCAT GPIO16ポート LAN9252使用評価ボード</a></p></li>
 </ul>
-</div>
-<div class="section" id="id3">
+</section>
+<section id="id3">
 <h2>■　セットアップ<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>EtherCATモジュールにLEDモジュールを接続する。</p></li>
@@ -204,13 +207,13 @@
 <li><p>LEDモジュールを使用しない場合は、ピンソケットに電源5Vを供給する。</p></li>
 <li><p>POWERのLEDが点灯する事を確認</p></li>
 </ul>
-</div>
-<div class="section" id="pc">
+</section>
+<section id="pc">
 <h2>■　PC側のセットアップ<a class="headerlink" href="#pc" title="Permalink to this headline">¶</a></h2>
-<p>EtherCATは一般のPC(Linux)に付属する有線LANを使って通信を行います。</p>
+<p>EtherCATは一般のLinuxに付属する有線LANを使って通信を行います。</p>
 <p>物理的なセットアップは、</p>
 <ul class="simple">
-<li><p>PC(Linux)の有線LANポートにLANケーブルを接続する。</p></li>
+<li><p>Linuxの有線LANポートにLANケーブルを接続する。</p></li>
 <li><p>その有線LANを直接 EtherCATのAポートに接続する。</p></li>
 <li><p>EtherCATのアクセスランプの点滅を確認する。</p></li>
 <li><p>Linux側では有線LANが接続されたが、インターネットへは未接続といったアラートが出る。（問題ない）</p></li>
@@ -224,9 +227,9 @@
 </ul>
 <p>これでモジュールが点滅したりします。</p>
 <p>※上手く行かない際のアドバイス</p>
-<p>test.pyの
-cat = EtherCAT_Init(&quot;eth0&quot;)    # EtherCATのネットワーク初期設定
-にてNICカードを選択してます。LinuxPCで通信を行うNICの名前に変更して下さい。</p>
+<p>test.pyの</p>
+<p>cat = EtherCAT_Init(&quot;eth0&quot;)    # EtherCATのネットワーク初期設定</p>
+<p>にてNICカードを選択してます。LinuxPCで通信を行うNICの名前に変更して下さい。</p>
 <p>※　Windows,Macでは動きません（なぜですか？）</p>
 <p>Windows,Macでは、Socet通信に制限がかかっています。特に、EtherCATの宛先不明のパケットは受信する際にドライバで弾く用になっています。
 その為、公式のソフトやその他の仕組みは「パケットキャプチャ」等で使用する特殊ドライバを経由し、パケットを読み取るように行っています。
@@ -234,8 +237,8 @@ cat = EtherCAT_Init(&quot;eth0&quot;)    # EtherCATのネットワーク初期�
 WindowsやMacOSにてご要望がある際は、以下のアドレスもしくはTwitter(&#64;nonNoise)までご意見いただければ頑張りたいと思います。</p>
 <p>※その他、上手く行かない際は以下の問い合わせよりご連絡下さい。</p>
 <p>info＠artifactnoise.com　（アットマークを半角にしてください）</p>
-</div>
-<div class="section" id="id4">
+</section>
+<section id="id4">
 <h2>■　ピンアサイン<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <dl class="field-list simple">
 <dt class="field-odd">ボード電源</dt>
@@ -378,12 +381,12 @@ WindowsやMacOSにてご要望がある際は、以下のアドレスもしく�
 <dd class="field-even"><p>#EN (SPIもしくはQSPIで使用)</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="id5">
+</section>
+<section id="id5">
 <h2>■　回路図<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <a class="reference external image-reference" href="https://github.com/nonNoise/EtherCAT_Document/blob/master/source/file/CAD/Schematic.pdf"><img alt="../_images/p02.png" src="../_images/p02.png" style="width: 701.7px; height: 495.90000000000003px;" /></a>
-</div>
-<div class="section" id="id6">
+</section>
+<section id="id6">
 <h2>■　外形図面<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <p>★ 寸法付きPDFファイル</p>
 <blockquote>
@@ -423,8 +426,8 @@ WindowsやMacOSにてご要望がある際は、以下のアドレスもしく�
 <dd class="field-even"><p>2019/02/05</p>
 </dd>
 </dl>
-</div>
-</div>
+</section>
+</section>
 
 
                 </div>
@@ -461,7 +464,7 @@ WindowsやMacOSにてご要望がある際は、以下のアドレスもしく�
       <!-- footer -->
       <footer role="contentinfo">
           &copy; Copyright 2019, Y.Kitagami.
-        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 3.0.4.
+        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 4.0.1.
       </footer>
       <!-- /footer -->
 

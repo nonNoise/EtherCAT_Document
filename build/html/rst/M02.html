@@ -6,7 +6,8 @@
 <html lang="jp">
   <head>
     <meta charset="utf-8" />
-    
+    <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>AN-202 LED16モジュール 使い方 &mdash; EtherCAT 開発記録  documentation</title>
     <meta name="description" content="">
     <meta name="author" content="">
@@ -29,6 +30,8 @@
 
 <link rel="stylesheet" href="../_static/css/basicstrap.css" type="text/css" />
 <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+<link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/basicstrap.css" type="text/css" />
     
 <script type="text/javascript">
   var DOCUMENTATION_OPTIONS = {
@@ -39,10 +42,10 @@
             HAS_SOURCE:  true
   };
 </script>
+    <script type="text/javascript" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/js/jquery.min.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/js/bootstrap3.min.js"></script>
 <script type="text/javascript" src="../_static/js/jquery.cookie.min.js"></script>
 <script type="text/javascript" src="../_static/js/basicstrap.js"></script>
@@ -179,30 +182,30 @@
               <div class="bodywrapper">
                 <div class="body">
                   
-  <div class="section" id="an-202-led16">
+  <section id="an-202-led16">
 <h1>AN-202　LED16モジュール　使い方<a class="headerlink" href="#an-202-led16" title="Permalink to this headline">¶</a></h1>
 <a class="reference external image-reference" href="https://www.switch-science.com/catalog/5918/"><img alt="../_images/LEDx16.jpg" src="../_images/LEDx16.jpg" style="width: 275.40000000000003px; height: 414.0px;" /></a>
-<div class="section" id="id1">
+<section id="id1">
 <h2>概要<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>手取り早くEtherCATにて通信テストを行う際のもっとも単純なEtherCAT Slaveモジュール用のLEDボードです。</p>
 <p><a class="reference external" href="https://www.switch-science.com/catalog/5917/">EtherCAT GPIO16ポート LAN9252使用評価ボード</a> に接続して使います。</p>
 <p>USB-MicroBを電源とし、GPIOx16を全てLEDに接続してあります。</p>
 <p>外部回路を接続する前に、マスター側のプログラムが正常かどうか、またEtherCATの勉強用に使用出来ます。</p>
-</div>
-<div class="section" id="id2">
+</section>
+<section id="id2">
 <h2>購入<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.switch-science.com/catalog/5918/">EtherCATモジュール用LEDx16ボード</a></p></li>
 </ul>
-</div>
-<div class="section" id="id3">
+</section>
+<section id="id3">
 <h2>モジュール側のセットアップ<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>EtherCATモジュールにLEDモジュールを接続する。</p></li>
 <li><p>POWERのLEDが点灯する事を確認</p></li>
 </ul>
-</div>
-<div class="section" id="pc">
+</section>
+<section id="pc">
 <h2>PC側のセットアップ<a class="headerlink" href="#pc" title="Permalink to this headline">¶</a></h2>
 <p>EtherCATは一般のPC(Linux)に付属する有線LANを使って通信を行います。</p>
 <p>物理的なセットアップは、</p>
@@ -224,8 +227,8 @@
 <blockquote>
 <div><p>info＠artifactnoise.com　（アットマークを半角にしてください）</p>
 </div></blockquote>
-</div>
-<div class="section" id="id4">
+</section>
+<section id="id4">
 <h2>ピンアサイン<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <dl class="field-list simple">
 <dt class="field-odd">電源ケーブル</dt>
@@ -242,8 +245,8 @@
 </dd>
 </dl>
 <a class="reference internal image-reference" href="../_images/pin_assin2.png"><img alt="../_images/pin_assin2.png" src="../_images/pin_assin2.png" style="width: 487.6px; height: 610.4px;" /></a>
-</div>
-<div class="section" id="id5">
+</section>
+<section id="id5">
 <h2>回路図<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="../_images/LED16.png"><img alt="../_images/LED16.png" src="../_images/LED16.png" style="width: 125.2px; height: 105.60000000000001px;" /></a>
 <div class="line-block">
@@ -276,8 +279,8 @@
 <dd class="field-even"><p>2019/02/05</p>
 </dd>
 </dl>
-</div>
-</div>
+</section>
+</section>
 
 
                 </div>
@@ -314,7 +317,7 @@
       <!-- footer -->
       <footer role="contentinfo">
           &copy; Copyright 2019, Y.Kitagami.
-        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 3.0.4.
+        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 4.0.1.
       </footer>
       <!-- /footer -->
 
