@@ -165,6 +165,17 @@ info＠artifactnoise.com　（アットマークを半角にしてください�
 
     https://raw.githubusercontent.com/nonNoise/EtherCAT_Document/master/source/file/CAD/Outline.dxf
 
+
+
+■　参考ESIファイル
+--------------------------------------------------
+    
+※最低限の機能のみ設定しています。
+※オンボードでEEPROMの書き換えができます。その為、このESIファイルも変更が可能です。
+※製品の性能を制限する目的ではありません。テスト用のファイルです。
+
+https://github.com/nonNoise/EtherCAT_Document/blob/master/source/ArtifactNoise_EtherCATBord_GPO16_2.xml
+
 |
 
 |
