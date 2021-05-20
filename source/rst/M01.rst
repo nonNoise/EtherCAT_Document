@@ -39,11 +39,11 @@ EtherCATの情報を記録するEEPROMもボードに搭載してあり、自由
 ■　PC側のセットアップ
 --------------------------------------------------
 
-EtherCATは一般のPC(Linux)に付属する有線LANを使って通信を行います。
+EtherCATは一般のLinuxに付属する有線LANを使って通信を行います。
 
 物理的なセットアップは、
 
-- PC(Linux)の有線LANポートにLANケーブルを接続する。
+- Linuxの有線LANポートにLANケーブルを接続する。
 
 - その有線LANを直接 EtherCATのAポートに接続する。
 
@@ -67,7 +67,9 @@ EtherCATは一般のPC(Linux)に付属する有線LANを使って通信を行い
 ※上手く行かない際のアドバイス
 
 test.pyの
+
 cat = EtherCAT_Init("eth0")    # EtherCATのネットワーク初期設定
+
 にてNICカードを選択してます。LinuxPCで通信を行うNICの名前に変更して下さい。
 
 
