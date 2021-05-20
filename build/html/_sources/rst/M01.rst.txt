@@ -136,14 +136,14 @@ info＠artifactnoise.com　（アットマークを半角にしてください�
 :SYNC0: 分散クロック出力端子
 :SYNC1: 分散クロック出力端子
 
-★　SPI通信を行う際の配線
+★　12ピンソケットを、SPI通信で行う際の配線
 
 :GND: GND
 :+5V: 電源供給用
-:SIO1: SPIでは、MISO (QSPIで使用)
-:SIO0: SPIでは、MOSI (QSPIで使用)
-:SCK: SCK (SPIもしくはQSPIで使用)
-:#SCS: #EN (SPIもしくはQSPIで使用)
+:SIO1: MISO 
+:SIO0: MOSI 
+:SCK: SCK 
+:#SCS: #EN 
 
 
 ■　回路図
